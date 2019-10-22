@@ -26,4 +26,4 @@ class LuckyNumberTestCase(unittest.TestCase):
 
 
 if len(sys.argv) > 1 and sys.argv[1] == 'test':
-    unittest.main()
+    unittest.main(argv=sys.argv[:1])
