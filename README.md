@@ -1,23 +1,23 @@
-🐍 Snake Charmer Guide
-======================
+# 🐍 Snake Charmer Guide
 
 In this repo you will find all material related to the Python beginner course held at the TU Dresden in the winter term 2019/20.
+
+![Logo](./docs/logo.png)
 
 ## ✈️ Overview
 
 - Introduction & Installation
 - Basics
-    - Variables & Typen
-    - If & Else
-    - Functions
-    - For & While
- - Write your own code
-    - Dice simulator
-    - Guess a number
+  - Variables & Typen
+  - If & Else
+  - Functions
+  - For & While
+- Write your own code
+  - Dice simulator
+  - Guess a number
 - Classes
 - Imports, Modules
 - External Packages & PIP
-
 
 ## 🚀 Project ideas
 
@@ -29,10 +29,9 @@ By the end of this course, every
 
 If you have an idea for a project that you would like to see realised and explained, we are open for suggestions.
 
-
 ## 💪🏻 Exercises
 
-In the exercises folder, you will find many prepared Python files that already include scaffolds. 
+In the exercises folder, you will find many prepared Python files that already include scaffolds.
 
 Say you want to run the `factorial.py` exercise. After navigating to the directory with all the exercises, the following command will run the code.
 
@@ -40,14 +39,13 @@ Say you want to run the `factorial.py` exercise. After navigating to the directo
 python3 factorial.py
 ```
 
-*NOTE:* Depending on your operating system and installation method, the interpreter could also be called `python` or ``python38``.
+_NOTE:_ Depending on your operating system and installation method, the interpreter could also be called `python` or `python38`.
 
 This will only run the code that is not inside any function. However, each exercise will include prepared tests that allow you to check if your implementation is correct. To trigger the test execution, just add `test` to the command.
 
 ```bash
 python3 factorial.py test
 ```
-
 
 ## 🎓 Anatomy of an exercise
 
@@ -68,7 +66,7 @@ def factorial(num: int) -> int:
     pass
 ```
 
-Each exercise will contain one or more functions that you should implement. All function parameters (`num`) have their type annotated so you know what type of input you can expected (`int`). The return value is also annotated to let you know what type of output your implementation should produce. 
+Each exercise will contain one or more functions that you should implement. All function parameters (`num`) have their type annotated so you know what type of input you can expected (`int`). The return value is also annotated to let you know what type of output your implementation should produce.
 
 The description is what the function should actually do is given as a docstring (the thing between the triple quotes). No exercise requires you to have any prior knowledge about the topic of the exercise, as the explanation found here should be sufficient.
 
