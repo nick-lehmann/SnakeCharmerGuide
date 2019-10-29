@@ -4,7 +4,7 @@
 
 In this repo you will find all material related to the Python beginner course held at the TU Dresden in the winter term 2019/20.
 
-#### [📺 Presetation](https://nick-lehmann.github.io/SnakeCharmerGuide)
+### [📺 Presentation](https://nick-lehmann.github.io/SnakeCharmerGuide)
 
 ## ✈️ Overview
 
