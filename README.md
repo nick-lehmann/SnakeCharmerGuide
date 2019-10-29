@@ -1,8 +1,8 @@
+![Logo](./docs/logo.png)
+
 # 🐍 Snake Charmer Guide
 
 In this repo you will find all material related to the Python beginner course held at the TU Dresden in the winter term 2019/20.
-
-![Logo](./docs/logo.png)
 
 ## ✈️ Overview
 
