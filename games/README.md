@@ -2,9 +2,7 @@
 
 The solutions can be found in the relative files. But it's much more fun to solve them alone! You will learn more 😉
 
-## List
-
-### Milka
+### 🐄 Milka
 
 Milka the cow needs 10 grass to do 1 chocolate
 2 Grass grow from 1 rain.
@@ -15,7 +13,7 @@ Milka the cow needs 10 grass to do 1 chocolate
 
 Bonus Points: Give the cow a name and print it
 
-### Ninjas
+### 🤺 Ninjas
 
 We need to fight 50 dragons.
 A ninja can defat 3 dragons.
@@ -25,7 +23,7 @@ Do we win or loose?
 
 Bonus Points: Say how many more ninjas do we need to win the fight!
 
-### Pairs
+### 👨‍👧‍👧 Pairs
 
 All the students must get together in groups.
 Are all students in a group or is there someone alone?
