@@ -2,6 +2,8 @@
 
 The solutions can be found in the relative files. But it's much more fun to solve them alone! You will learn more 😉
 
+![Games](https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
+
 ### 🐄 Milka
 
 Milka the cow needs 10 grass to do 1 chocolate
