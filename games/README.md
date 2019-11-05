@@ -32,3 +32,13 @@ Are all students in a group or is there someone alone?
 2. Check with the modulo operator "%" if there is someone left out if the gruop
 
 Bonus Points: What group sizes are possible so that no one is left out?
+
+### 🙎‍♀️ The new friend
+
+We have a list of friends
+"Charlie" is a new friend, but in the beginning she is at the end.
+We all like Charlie so we put her in the middle of our friends.
+
+1. Create a list with 4 names (Alice, Bob, Diana, Elisa)
+2. Put Charlie inside the friend list
+3. Move Charlie to the middle
