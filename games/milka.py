@@ -16,5 +16,5 @@ if grass < 10:
     print('No Chocolate today 😭')
 
 else:
-    choccolate = int(grass / 10)
-    print(f'{cow} made {choccolate} today! 🐄🍫')
+    chocolate = int(grass / 10)
+    print(f'{cow} made {chocolate} today! 🐄🍫')
