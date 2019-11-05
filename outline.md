@@ -1,6 +1,20 @@
 OUTLINE
 ========
 
+## ✈️ Overview
+
+- Introduction & Installation
+- Basics
+  - Variables & Types
+  - If & Else
+  - Functions
+  - For & While
+- Write your own code (Rock paper scissors)
+- Classes
+- Imports, Modules
+- External Packages & PIP
+
+
 ## Session 1 (29.10.2019)
 
 Learning goals
