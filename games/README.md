@@ -29,7 +29,7 @@ All the students must get together in groups.
 Are all students in a group or is there someone alone?
 
 1. Define a variable "students" and one "group_size"
-2. Check with the modulo operator "%" if there is someone left out if the gruop
+2. Check with the modulo operator "%" if there is someone left out in the gruop
 
 Bonus Points: What group sizes are possible so that no one is left out?
 
@@ -57,3 +57,15 @@ When he is finished he says "Mamma mia! Buonissima! 😋"
 4. When finished say "Mamma ..."
 
 Bonus Points: say if he is still hungry after eating
+
+
+### ✂⛰📃 Rock-Paper-Scissors
+
+You want to play rock-paper-scissors against the computer.
+
+1. Define a dictionary for each player that stores its name and current score.
+2. Ask the player about his or her name and ask how many round should be played.
+3. Each round, ask the player for his or her choice. The computer should pick a random choice.
+4. Evaluate each round and print who has won.
+
+Bonus Points: Accept different spelling of each choice ('rock', 'Rock', 'rOcK') and maybe even abbreviations.
