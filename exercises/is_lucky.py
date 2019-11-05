@@ -13,6 +13,9 @@ def is_lucky(number: int) -> bool:
     pass
 
 
+# =========
+#  TESTING
+# =========
 class LuckyNumberTestCase(unittest.TestCase):
     def test_is_lucky(self):
         self.assertTrue(is_lucky(1230))

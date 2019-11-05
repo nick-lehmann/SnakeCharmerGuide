@@ -16,6 +16,9 @@ def weekend_activity(friend_available: bool, nice_weather: bool) -> str:
     pass
 
 
+# =========
+#  TESTING
+# =========
 class WeekendActivityTestCase(unittest.TestCase):
     def test_weekend_activity(self):
         self.assertEqual(

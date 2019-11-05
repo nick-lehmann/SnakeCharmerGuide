@@ -16,6 +16,9 @@ def fizzbuzz():
     pass
 
 
+# =========
+#  TESTING
+# =========
 class DecisionMakingTestCase(unittest.TestCase):
     @patch('builtins.print')
     def test_fizz_buzz(self, mocked_print):
