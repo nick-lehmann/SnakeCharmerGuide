@@ -6,6 +6,8 @@ In this repo you will find all material related to the Python beginner course he
 
 ### [📺 Presentation](https://nick-lehmann.github.io/SnakeCharmerGuide)
 
+### [🕹 Games](https://github.com/nick-lehmann/SnakeCharmerGuide/tree/master/games)
+
 ## ✈️ Overview
 
 - Introduction & Installation
