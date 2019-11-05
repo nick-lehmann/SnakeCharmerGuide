@@ -8,20 +8,8 @@ In this repo you will find all material related to the Python beginner course he
 
 ### [🕹 Games](https://github.com/nick-lehmann/SnakeCharmerGuide/tree/master/games)
 
-## ✈️ Overview
+### [📄 Outline](https://github.com/nick-lehmann/SnakeCharmerGuide/tree/master/outline.md)
 
-- Introduction & Installation
-- Basics
-  - Variables & Typen
-  - If & Else
-  - Functions
-  - For & While
-- Write your own code
-  - Dice simulator
-  - Guess a number
-- Classes
-- Imports, Modules
-- External Packages & PIP
 
 ## 🚀 Project ideas
 
@@ -32,6 +20,7 @@ By the end of this course, every
 - 🤖 Telegram Bot
 
 If you have an idea for a project that you would like to see realised and explained, we are open for suggestions.
+
 
 ## 💪🏻 Exercises
 
