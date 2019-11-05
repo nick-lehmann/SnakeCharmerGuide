@@ -38,6 +38,9 @@ def sell_vodka(money: int, age: int):
     pass
 
 
+# =========
+#  TESTING
+# =========
 class ExceptionTestCase(unittest.TestCase):
     def test_division(self):
         self.assertEqual(divide(8, 4), 2)

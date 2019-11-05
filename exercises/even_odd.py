@@ -16,6 +16,9 @@ def is_odd(number: int) -> bool:
     pass
 
 
+# =========
+#  TESTING
+# =========
 class EvenOddTestCase(unittest.TestCase):
     def test_is_even(self):
         self.assertTrue(is_even(4))

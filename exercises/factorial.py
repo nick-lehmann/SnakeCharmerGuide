@@ -9,6 +9,9 @@ def factorial(num: int) -> int:
     pass
 
 
+# =========
+#  TESTING
+# =========
 class FactorialTestCase(unittest.TestCase):
     def test_factorial(self):
         self.assertEqual(factorial(0), 1)

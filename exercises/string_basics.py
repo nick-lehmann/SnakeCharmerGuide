@@ -1,0 +1,63 @@
+import sys
+import unittest
+
+
+def concatenate_with_whitespace(s1: str, s2: str) -> str:
+    """
+    Concatenates the two given string with a whitespace
+    and return the result.
+    """
+    pass
+
+
+def convert_case(input_string: str, conversion: str) -> str:
+    """
+    Convert the given string according to the conversion parameter.
+
+    Conversion parameters are:
+    - upper
+    - lower
+    """
+    pass
+
+
+# =========
+#  TESTING
+# =========
+class StringMethodsTestCase(unittest.TestCase):
+    def test_concatenate(self):
+        self.assertEqual(
+            concatenate_with_whitespace('hello', 'world'),
+            'hello world'
+        )
+        self.assertEqual(
+            concatenate_with_whitespace('Max', 'Mustermann'),
+            'Max Mustermann'
+        )
+
+    def test_convert_case(self):
+        self.assertEqual(
+            convert_case('hello world', 'upper'),
+            'HELLO WORLD'
+        )
+        self.assertEqual(
+            convert_case('max Mustermann', 'upper'),
+            'MAX MUSTERMANN'
+        )
+        self.assertEqual(
+            convert_case('HELLO', 'upper'),
+            'HELLO'
+        )
+
+        self.assertEqual(
+            convert_case('HELLO WORLD', 'lower'),
+            'hello world'
+        )
+        self.assertEqual(
+            convert_case('University', 'lower'),
+            'university'
+        )
+
+
+if len(sys.argv) > 1 and sys.argv[1] == 'test':
+    unittest.main(argv=sys.argv[:1])
