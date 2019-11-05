@@ -7,7 +7,7 @@
 # 1. Define a variable "slices" and "hunger"
 # 2. For each slice say "mhhh"
 # 3. Check if he has hunger left
-# 3. When finished say "Mamma ..."
+# 4. When finished say "Mamma ..."
 
 # Bonus Points: say if he is still hungry after eating
 
