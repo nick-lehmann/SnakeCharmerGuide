@@ -4,7 +4,7 @@ The solutions can be found in the relative files. But it's much more fun to solv
 
 ![Games](https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
 
-### 🐄 Milka
+### 🐄 Milka [If/Else]
 
 Milka the cow needs 10 grass to do 1 chocolate
 2 Grass grow from 1 rain.
@@ -15,7 +15,7 @@ Milka the cow needs 10 grass to do 1 chocolate
 
 Bonus Points: Give the cow a name and print it
 
-### 🤺 Ninjas
+### 🤺 Ninjas [If/Else]
 
 We need to fight 50 dragons.
 A ninja can defat 3 dragons.
@@ -25,7 +25,7 @@ Do we win or loose?
 
 Bonus Points: Say how many more ninjas do we need to win the fight!
 
-### 👨‍👧‍👧 Pairs
+### 👨‍👧‍👧 Pairs [If/Else]
 
 All the students must get together in groups.
 Are all students in a group or is there someone alone?
@@ -35,7 +35,7 @@ Are all students in a group or is there someone alone?
 
 Bonus Points: What group sizes are possible so that no one is left out?
 
-### 🙎‍♀️ The new friend
+### 🙎‍♀️ The new friend [Lists]
 
 We have a list of friends
 "Charlie" is a new friend, but in the beginning she is at the end.
@@ -45,7 +45,7 @@ We all like Charlie so we put her in the middle of our friends.
 2. Put Charlie inside the friend list
 3. Move Charlie to the middle
 
-### 🍕 Pizza
+### 🍕 Pizza [Loops]
 
 Mario eats a pizza.
 The pizza is so tasty that everytime he eats a slice he wants to say "Mhhhhhh"
@@ -60,8 +60,17 @@ When he is finished he says "Mamma mia! Buonissima! 😋"
 
 Bonus Points: say if he is still hungry after eating
 
+### 🚂 Train Driver [Loops]
 
-### ✂⛰📃 Rock-Paper-Scissors
+You are driving a train from Berlin to Paris.
+On the way to Paris you will stop in Hamburg, Amsterdam and Brussels before arriving in Paris.
+Every time you depart you will need to tell the passengers that you are departing and what the next stop will be.
+In paris tell the pasengers that that is the last stop
+
+Bonus Points: Do all the prints inside the loop.
+
+
+### ⛰📃✂️ Rock-Paper-Scissors [Dictionaries]
 
 You want to play rock-paper-scissors against the computer.
 
