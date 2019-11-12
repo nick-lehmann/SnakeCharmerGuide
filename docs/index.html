@@ -20,7 +20,7 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="MelWqW4VOTnPAR4qIOvAM9vqlIaW/dKKQ5HKo8DBPfMah1hzrYOi/+HkOv2gYXk7ItfTGd+P65AGECgqf5TRwg==" />
+<meta name="csrf-token" content="r5TtXKQnlWxG+uWShEOkColNULevZn4paQGOS00iYOB4jbBCTumOQWYu6E9wEr8MQFUwpA0mfl3vyn0FNABQLw==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -60,18 +60,12 @@
 	<ol>
 		<li>Variables &amp; Typen</li>
 		<li>If &amp; Else</li>
+		<li>Loops</li>
 		<li>Functions</li>
-		<li>For &amp; While</li>
+		<li>Classes</li>
+		<li>Errors</li>
 	</ol>
 	</li>
-	<li>Write your own code
-	<ol>
-		<li>The terminal</li>
-		<li><span style="font-size:37.5px; text-align:left">Dice simulator</span></li>
-		<li>Guess a number</li>
-	</ol>
-	</li>
-	<li>Classes</li>
 	<li>Imports, Modules</li>
 	<li>External Packages &amp; PIP</li>
 </ol>
@@ -498,73 +492,7 @@ if 42 == 42:
 if input == 'awesome':
   yaaas()
 else:
-  nope()</code></pre></div></div></div></section><section data-background-color="#000000" data-id="baf7ce4cabddc1330df40e4e00388f7d"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="0b1dec1354f20d51a4693a5cfa05cd12"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>Loops</strong></h1>
-</div></div>
-
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="b799521775402184ba16db76b151ff73"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">for x in range(0, 3):
-  print("We're on 3 times")
-
-
-while True:
-  print('To infinity and beyond!')</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="97423d493185a4ea31d80925814286ee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
-<p style="text-align:right">Basics</p>
-</div></div></section><section data-background-color="#000000" data-id="e559ea053ca3593596883faf761b4df1"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="6948afbebc39e902014cffc85767796b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>For Loop</strong></h1>
-</div></div>
-
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="c3a50cf079d05c866c72bc5c6a1033f5"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">for x in range(3):
-  print(x)  # 0,1,2
-
-
-for name in ['Lisa', 'Günther', 'Sigfriede']:
-  print(name)  # Lisa, Günther, Sigfriede</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="6f10acd43928e9b2a7eccb251fe02dbe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
-<p style="text-align:right">Basics</p>
-</div></div></section><section data-background-color="#000000" data-id="87e45c2549853c77f3a4f500107f234b"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="960075e4379ee4379ae14304d35fa768"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>While Loop</strong></h1>
-</div></div>
-
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 71px;" data-block-id="5c4de45a1bb413443989f76df316c118"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 225%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">n = 5
-while n &gt; 0:
-  print(n)
-  n -= 1
-  # 5,4,3,2,1
-
-
-while True:
-  # forever
-
-
-l = ['A', 'B', 'C']
-while l:
-  element = l.pop()
-  print(element)
-  # A, B, C</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="f6d7dc7ce4031442560b77acd7f5151e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
-<p style="text-align:right">Basics</p>
-</div></div></section><section data-background-color="#000000" data-id="b04af65cff051dbc07e8743e90afa02e"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="dae8b595f5f9ad559aa7f76ab0c665e8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>Loop Abort</strong></h1>
-</div></div>
-
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 71px;" data-block-id="bb5407dba22fcad41888762a91400e13"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">l = [1, 2, 3, 4, 5]
-
-for x in l:
-  if l == 3:
-    break
-  print(x)
-  # 1,2
-
-
-for x in l:
-  if l == 3:
-    continue
-  print(x)
-  # 1,2,4,5</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="c2de5f106b6c152ff6882b03119fd1d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
-<p style="text-align:right">Basics</p>
-</div></div></section><section data-background-color="#fbfff3" data-id="9fe3773ad20df1c3fc85c11413ba03b8"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="abc43c9cde1c92cacd2f503fd494fbf1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+  nope()</code></pre></div></div></div></section><section data-background-color="#fbfff3" data-id="9fe3773ad20df1c3fc85c11413ba03b8"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="abc43c9cde1c92cacd2f503fd494fbf1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
 <h1><strong>Reserved Words</strong></h1>
 </div></div>
 
@@ -622,7 +550,7 @@ for x in l:
 <td style="padding: 10px; border-color: rgb(136, 136, 136);">lambda</td>
 <td style="padding: 10px; border-color: rgb(136, 136, 136);">yield</td>
 </tr>
-</tbody></table></div></div></section></section><section class="stack" data-id="410dd3fb774ae924b5a08f4b4f2ee65a"><section data-background-color="#fbfff3" data-id="ce44f1277de0725ad7a25b6d8147b192"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="001db1323e2e5347e016aa4fc907d00a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 150%; color: rgb(0, 0, 0);">
+</tbody></table></div></div></section></section><section data-background-color="#fbfff3" data-id="ce44f1277de0725ad7a25b6d8147b192"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="001db1323e2e5347e016aa4fc907d00a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 150%; color: rgb(0, 0, 0);">
 <h1><strong>Terminal for Dummies</strong></h1>
 </div></div>
 
@@ -667,48 +595,76 @@ for x in l:
 <td style="padding: 20px;">python3 hello.py</td>
 <td style="padding: 20px;">python hello.py</td>
 </tr>
-</tbody></table></div></div></section><section data-background-color="#fbfff3" data-id="ea0d83876585f2bc4c78e81bee8f4f6e"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="91f8370ce8eac6017b1aa864c57e4891"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
-<h1><strong>Hello World</strong></h1>
+</tbody></table></div></div></section><section class="stack" data-id="ebe8b6d2e198c28ef39d1f6ee4c6bfb0"><section data-background-color="#fbfff3" data-id="44e6d68e55e9ff16335759d980c1b3e7"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="e4721c2ef703a37e451f59d7a1138cc9"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+<h1><strong>Loops</strong></h1>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 1760px; left: 80px; top: 288px;" data-block-id="dd2b7c5ccc9987dfb78817b34cd6e9e3"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 125%; color: rgb(0, 0, 0);" data-fragment-index="0">
-<ol>
-	<li>Create a Python file "hello.py"</li>
-	<li>Print "Hello World"</li>
-	<li>Run the file.
-	<ul>
-		<li>macOS / Linux: python3 main.py</li>
-		<li>windows: Double-Click on main.py?</li>
-	</ul>
-	</li>
-</ol>
+
+</section><section data-background-color="#000000" data-id="baf7ce4cabddc1330df40e4e00388f7d"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="0b1dec1354f20d51a4693a5cfa05cd12"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Overview</strong></h1>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 532px; left: 0px; top: 0px;" data-block-id="eaadfebac61fc592b2ed1a7148d0c9a0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(0, 0, 0); font-size: 150%; text-align: left; padding: 10px;" dir="ui">
-<p><span style="font-size:1.0em">Write your own code</span></p>
-</div></div></section><section data-background-color="#fbfff3" data-id="4cb0ed28b00d3464db4d680a3f1ed83e"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="809e506e33a9ac7dc2e31934e20e1243"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
-<h1><strong>Dice Simulator</strong></h1>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="b799521775402184ba16db76b151ff73"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">for x in range(0, 3):
+  print("We're on 3 times")
+
+
+while True:
+  print('To infinity and beyond!')</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="97423d493185a4ea31d80925814286ee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Loops</p>
+</div></div></section><section data-background-color="#000000" data-id="e559ea053ca3593596883faf761b4df1"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="6948afbebc39e902014cffc85767796b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>For</strong></h1>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 1760px; left: 80px; top: 288px;" data-block-id="1c5a6ac5584cbf1d9a4a23feeab2c3d2"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 125%; color: rgb(0, 0, 0);" data-fragment-index="0">
-<ol>
-	<li>Create a Python file (e.g. dice.py)</li>
-	<li>Search the interwebs for random in python</li>
-	<li>Write a programm that prints a random number between 1 and 6</li>
-</ol>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="c3a50cf079d05c866c72bc5c6a1033f5"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">for x in range(3):
+  print(x)  # 0,1,2
+
+
+for name in ['Lisa', 'Günther', 'Sigfriede']:
+  print(name)  # Lisa, Günther, Sigfriede</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="6f10acd43928e9b2a7eccb251fe02dbe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Loops</p>
+</div></div></section><section data-background-color="#000000" data-id="87e45c2549853c77f3a4f500107f234b"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="960075e4379ee4379ae14304d35fa768"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>While</strong></h1>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 532px; left: 0px; top: 0px;" data-block-id="2038294289b53d9ea90a1853735fd1ef"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(0, 0, 0); font-size: 150%; text-align: left; padding: 10px;" dir="ui">
-<p><span style="font-size:1.0em">Write your own code</span></p>
-</div></div></section><section data-background-color="#fbfff3" data-id="aed2882696284ea30e4bd05624911dc3"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="50705a947ca0e7f98c3d27c48f835eb2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
-<h1><strong>Guess a number</strong></h1>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 71px;" data-block-id="5c4de45a1bb413443989f76df316c118"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 225%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">n = 5
+while n &gt; 0:
+  print(n)
+  n -= 1
+  # 5,4,3,2,1
+
+
+while True:
+  # forever
+
+
+l = ['A', 'B', 'C']
+while l:
+  element = l.pop()
+  print(element)
+  # A, B, C</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="f6d7dc7ce4031442560b77acd7f5151e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Loops</p>
+</div></div></section><section data-background-color="#000000" data-id="b04af65cff051dbc07e8743e90afa02e"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="dae8b595f5f9ad559aa7f76ab0c665e8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Controlls</strong></h1>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 1760px; left: 80px; top: 288px;" data-block-id="3df5cc965b10098c2f942cfe85ea7892"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 125%; color: rgb(0, 0, 0);" data-fragment-index="0">
-<ol>
-	<li>Create a python file</li>
-	<li>Take input from user</li>
-	<li>Tell the user if they are above or below</li>
-	<li>If they are right, exit the programm</li>
-</ol>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 517px; left: 0px; top: 0px;" data-block-id="4fa4afaa57dcf038bcfb348c0a2906ea"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(0, 0, 0); font-size: 150%; text-align: left; padding: 10px;">
-<p><span>Write your own code</span></p>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 71px;" data-block-id="bb5407dba22fcad41888762a91400e13"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">l = [1, 2, 3, 4, 5]
+
+for x in l:
+  if l == 3:
+    break
+  print(x)
+  # 1,2
+
+
+for x in l:
+  if l == 3:
+    continue
+  print(x)
+  # 1,2,4,5</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="c2de5f106b6c152ff6882b03119fd1d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Loop</p>
 </div></div></section></section><section class="stack" data-id="ce64b77152f1e4e5edbf8230bdaf1b9e"><section data-background-color="#fbfff3" data-id="599886d1d047b1b79760aa0821177448"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="8b27138bdbf262f98502487eccd8479b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
 <h1><strong>Functions</strong></h1>
 </div></div>
@@ -720,7 +676,7 @@ for x in l:
 </ul>
 </div></div>
 </section><section data-background-color="#000000" data-id="c0d204005da4b2578327aace77834fac"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="2480f9792f27c445b8894ada68af7695"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>Functions</strong></h1>
+<h1><strong>Overview</strong></h1>
 </div></div>
 
 <div class="sl-block" data-block-type="code" style="width: 800px; height: 792px; left: 80px; top: 72px;" data-block-id="d4c8a8d5434df4002388a9aef49e6597"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;"># Simple
@@ -734,7 +690,7 @@ def greet(name):
 
 greet('Horst')</code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="bb8885b3e7f8cef9d22ba325fe27933c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 200%; color: rgb(238, 238, 238);">
-<p style="text-align:right">Basics</p>
+<p style="text-align:right">Functions</p>
 </div></div>
 <div class="sl-block" data-block-type="code" style="width: 880px; height: 792px; left: 960px; top: 72px;" data-block-id="6548a3b84290513ea70062cee3149b04"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;"># Return
 def add(a, b):
@@ -747,7 +703,71 @@ c = add(1, 2)
 def gradient(x, y):
   return y / x
 
-m = gradient(y=5, x=10)</code></pre></div></div></section></section><section class="stack" data-id="f50cff49b3d5b5ed308cc4d76edcb2d3"><section data-background-color="#fbfff3" data-id="38e6c1e2281a6f106c6e89f5d7f7c52c"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="40c28eab1a426737d0c0cc56124513ac"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+m = gradient(y=5, x=10)</code></pre></div></div></section><section data-background-color="#000000" data-id="6f1bd746c7cb45cef657541acceee6d5"><div class="sl-block" data-block-type="text" style="width: 1280px; left: 80px; top: 911px; height: auto;" data-block-id="f7e06abe6fba2d3b0887eb4dad8b3950"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;" dir="ui">
+<h1><strong>Declaration</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="c5d9e40655b8a02cdb9314e1650c8a41"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">def greet():
+  print("Hello 👋")</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="78d23d8b16285460c7d9811fa1f617e6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section><section data-background-color="#000000" data-id="46f6ea5c780b4308097bc19eab5e8c2f"><div class="sl-block" data-block-type="text" style="width: 1280px; left: 80px; top: 911px; height: auto;" data-block-id="9539d004e276b88885486ec4f0266677"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;" dir="ui">
+<h1><strong>Parameters</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="610319d16190856cefa1fd8e103fac6a"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">def greet(name):
+  print(f"Hello {name} 👋")
+ 
+
+greet('Python')</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="7dabc2ea1b452935fb7ba24ed60e4534"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section><section data-background-color="#000000" data-id="5f38acd8b17652e86d7d4a3a4e868a4d"><div class="sl-block" data-block-type="text" style="width: 1280px; left: 80px; top: 911px; height: auto;" data-block-id="c51d34c9d65a1d742ba62febefec482f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;" dir="ui">
+<h1><strong>Parameters</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 71px;" data-block-id="17d82ea5d3d6b8e7817f2b411820e4cc"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">def add(x, y):
+  return x + y
+
+three = add(1, 2)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="747b840a0f2960352afd858c32427060"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section><section data-background-color="#000000" data-id="bcdc0c31325e24b4d757156b1464e287"><div class="sl-block" data-block-type="text" style="width: 1280px; left: 80px; top: 911px; height: auto;" data-block-id="e6e1e292bb1368052fa8fa3f2ebf97dc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;" dir="ui">
+<h1><strong>Parameters</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 71px;" data-block-id="d0f5382072c9671fc8d91488bc59e402"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">def add(x, y=1):
+  return x + y
+
+three = add(1, 2)
+two = add(1)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="927146c634fe74ac85e58341997c4290"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section><section data-background-color="#000000" data-id="6757de6453cdc38b36e8219a048fc2ba"><div class="sl-block" data-block-type="text" style="width: 1280px; left: 80px; top: 911px; height: auto;" data-block-id="ceb0606fd71caaa2151114645619a86d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;" dir="ui">
+<h1><strong>Named Parameters</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 71px;" data-block-id="7d5f067ee33cceb52bfdbee51555bee6"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">def eat(pizza, slices):
+  print(f"Eating a pizza {pizza} with {slices} slices")
+
+eat('Margherita', 8)
+eat(pizza='Margherita', slices=8)
+eat(slices=8, pizza='Margherita')</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="04852a960fdcb6d67df9d91419b360c4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section></section><section class="stack" data-id="6e80a711d0c306c94c7b95d4be544b0b"><section data-background-color="#fbfff3" data-id="ae4ee0d4619f1ac94a8431944bade443"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="5a557b1e3e4e311000f87f9005874094"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+<h1><strong>Errors</strong></h1>
+</div></div>
+
+</section><section data-background-color="#000000" data-id="3c49544a8496bc3fc22ccfb04338b450"><div class="sl-block" data-block-type="text" style="width: 1280px; left: 80px; top: 911px; height: auto;" data-block-id="f438951645c61c52b70ff05f55637bb5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Title</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="94980ed81e100e8847289c633a9b165a"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">def main():
+  print("Hello 👋")</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="b2ca75ccc072119bdb1d452fa41e5eec"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Errors</p>
+</div></div></section></section><section class="stack" data-id="f50cff49b3d5b5ed308cc4d76edcb2d3"><section data-background-color="#fbfff3" data-id="38e6c1e2281a6f106c6e89f5d7f7c52c"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="40c28eab1a426737d0c0cc56124513ac"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
 <h1><strong>Classes</strong></h1>
 </div></div>
 
@@ -970,13 +990,17 @@ print(truck)
 </div></div>
 <div class="sl-block" data-block-type="text" data-block-id="1ecbc1a0ba42348607bb6ed1623c8dcb" style="height: auto; min-width: 30px; min-height: 30px; width: 1169px; left: 376px; top: 792px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="0">
 <p><a href="https://docs.python.org/3/reference/datamodel.html" target="_blank">docs.python.org/3/reference/datamodel.html</a></p>
-</div></div></section></section>
+</div></div></section></section><section data-background-color="#fbfff3" data-id="519edadcd97b9272ef074895572b6ce8"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="ba2b50be92586baf9ba1eea299ecd190"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+<h1><strong>Modules &amp; Imports</strong></h1>
+</div></div>
+
+</section>
 			</div>
 		</div>
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":"dark","phone_number":null,"phone_country_code":null,"media_sources":"unsplash","export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"hi@nicco.io","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":645257,"storage_limit":262144000},"deck":{"id":1625975,"slug":"python","title":"The Snake-Charmer Guide","description":"","width":1920,"height":1080,"visibility":"all","published_at":"2019-10-17T08:07:36.569Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/6e2b93216c370b3566725252628056d1/thumb.jpg?1571737068","view_count":1,"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"helvetica","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":49,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":null,"data_updated_at":1572959967699,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{}},"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":"dark","phone_number":null,"phone_country_code":null,"media_sources":"unsplash","export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"hi@nicco.io","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":645257,"storage_limit":262144000},"deck":{"id":1625975,"slug":"python","title":"The Snake-Charmer Guide","description":"","width":1920,"height":1080,"visibility":"all","published_at":"2019-10-17T08:07:36.569Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/6e2b93216c370b3566725252628056d1/thumb.jpg?1571737068","view_count":2,"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"helvetica","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":56,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":null,"data_updated_at":1573509446727,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{}},"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
