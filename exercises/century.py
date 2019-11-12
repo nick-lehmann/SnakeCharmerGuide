@@ -21,5 +21,4 @@ class CenturyTestCase(unittest.TestCase):
         self.assertEqual(century_from_year(350), 4)
 
 
-if len(sys.argv) > 1 and sys.argv[1] == 'test':
-    unittest.main(argv=sys.argv[:1])
+unittest.main()

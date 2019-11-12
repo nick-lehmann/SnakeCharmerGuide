@@ -22,5 +22,4 @@ class FactorialTestCase(unittest.TestCase):
         self.assertEqual(factorial(20), 2432902008176640000)
 
 
-if len(sys.argv) > 1 and sys.argv[1] == 'test':
-    unittest.main(argv=sys.argv[:1])
+unittest.main()

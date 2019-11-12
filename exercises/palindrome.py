@@ -30,5 +30,4 @@ class PalindromeTestCase(unittest.TestCase):
         self.assertFalse(check_palindrome('hello world'))
 
 
-if len(sys.argv) > 1 and sys.argv[1] == 'test':
-    unittest.main(argv=sys.argv[:1])
+unittest.main()

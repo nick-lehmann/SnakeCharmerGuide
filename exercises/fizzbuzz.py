@@ -38,5 +38,4 @@ class DecisionMakingTestCase(unittest.TestCase):
             self.assertEqual(expected, actual)
 
 
-if len(sys.argv) > 1 and sys.argv[1] == 'test':
-    unittest.main(argv=sys.argv[:1])
+unittest.main()

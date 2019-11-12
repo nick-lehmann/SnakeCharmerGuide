@@ -59,12 +59,13 @@ class ExceptionTestCase(unittest.TestCase):
 
         with self.assertRaises(Exception) as context:
             sell_vodka(100, 5)
-        self.assertEqual(type(context.exception).__name__, 'PersonTooYoungException')
+        self.assertEqual(type(context.exception).__name__,
+                         'PersonTooYoungException')
 
         with self.assertRaises(Exception) as context:
             sell_vodka(5, 20)
-        self.assertEqual(type(context.exception).__name__, 'NotEnoughMoneyException')
+        self.assertEqual(type(context.exception).__name__,
+                         'NotEnoughMoneyException')
 
 
-if len(sys.argv) > 1 and sys.argv[1] == 'test':
-    unittest.main(argv=sys.argv[:1])
+unittest.main()

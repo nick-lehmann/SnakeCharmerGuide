@@ -69,5 +69,4 @@ class StringMethodsTestCase(unittest.TestCase):
         )
 
 
-if len(sys.argv) > 1 and sys.argv[1] == 'test':
-    unittest.main(argv=sys.argv[:1])
+unittest.main()

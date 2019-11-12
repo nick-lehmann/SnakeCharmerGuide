@@ -39,5 +39,4 @@ class WeekendActivityTestCase(unittest.TestCase):
         )
 
 
-if len(sys.argv) > 1 and sys.argv[1] == 'test':
-    unittest.main()
+unittest.main()

@@ -43,5 +43,4 @@ class EvenOddTestCase(unittest.TestCase):
         self.assertFalse(is_odd(1462702))
 
 
-if len(sys.argv) > 1 and sys.argv[1] == 'test':
-    unittest.main(argv=sys.argv[:1])
+unittest.main()
