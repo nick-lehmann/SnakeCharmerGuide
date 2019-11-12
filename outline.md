@@ -23,6 +23,7 @@ Learning goals
 - First contact with python interpreter
 - Get to know basic concepts of python (variables, arithmetic operations, if-else)
 
+
 ## Session 2 (5.11.2019)
 
 Learning goals
@@ -47,6 +48,16 @@ Learning goals
 - List operations
 
 Outline
+- Warmup game: Pairs
+- Repeat slides about Lists
+- Game: The new friend
+- Show official python documentation (about lists)
+- Show slides about loops
+- Games: Pizza + Train Driver
+
+
+## Session 4 (19.11.2019)
+
 - Exercises
   - weekend
   - century
@@ -54,6 +65,3 @@ Outline
   - string_basic
   - list_basic
   - csv
-
-
-## Session 4 (19.11.2019)
