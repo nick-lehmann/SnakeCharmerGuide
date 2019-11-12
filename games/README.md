@@ -33,7 +33,8 @@ Are all students in a group or is there someone alone?
 1. Define a variable "students" and one "group_size"
 2. Check with the modulo operator "%" if there is someone left out in the gruop
 
-Bonus Points: What group sizes are possible so that no one is left out?
+Bonus Points: How many additional students do you need to fill the group?
+Bonus Bnous Points: What group sizes are possible so that no one is left out?
 
 ### 🙎‍♀️ The new friend [Lists]
 
