@@ -2,7 +2,7 @@ import sys
 import unittest
 
 
-def is_lucky(number: int) -> bool:
+def is_lucky(number):
     """
     Determine if the given ticket number is lucky.
 

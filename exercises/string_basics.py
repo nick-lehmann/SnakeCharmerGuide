@@ -2,7 +2,7 @@ import sys
 import unittest
 
 
-def concatenate_with_whitespace(s1: str, s2: str) -> str:
+def concatenate_with_whitespace(s1, s2):
     """
     Concatenates the two given string with a whitespace
     and return the result.
@@ -10,7 +10,7 @@ def concatenate_with_whitespace(s1: str, s2: str) -> str:
     pass
 
 
-def convert_case(input_string: str, conversion: str) -> str:
+def convert_case(input_string, conversion):
     """
     Convert the given string according to the conversion parameter.
 

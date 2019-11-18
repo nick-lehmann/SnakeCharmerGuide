@@ -2,7 +2,7 @@ import sys
 import unittest
 
 
-def century_from_year(year: int) -> int:
+def century_from_year(year):
     """
     Return the century of the given year.
     """

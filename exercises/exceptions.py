@@ -2,7 +2,7 @@ import sys
 import unittest
 
 
-def divide(dividend: int, divisor: int) -> float:
+def divide(dividend, divisor):
     """
     Return the result of the division but raise an error
     if the divisor is zero.
@@ -12,7 +12,7 @@ def divide(dividend: int, divisor: int) -> float:
     pass
 
 
-def count_lines_of_files(filename: str) -> int:
+def count_lines_of_files(filename):
     """
     Return the number of lines in the file with the
     given filename.
@@ -25,7 +25,7 @@ def count_lines_of_files(filename: str) -> int:
     pass
 
 
-def sell_vodka(money: int, age: int):
+def sell_vodka(money, age):
     """
     Try to sell vodka to a person with the given age.
 

@@ -5,7 +5,7 @@ import unittest
 # ==========
 #  EXERCISE
 # ==========
-def check_palindrome(input_string: str) -> bool:
+def check_palindrome(input_string):
     """
     Check if the given string is a palindrome.
 

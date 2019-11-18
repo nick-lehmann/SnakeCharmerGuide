@@ -2,14 +2,14 @@ import sys
 import unittest
 
 
-def is_even(number: int) -> bool:
+def is_even(number):
     """
     Decide if the given number is even.
     """
     pass
 
 
-def is_odd(number: int) -> bool:
+def is_odd(number):
     """
     Decide if the given number is odd.
     """

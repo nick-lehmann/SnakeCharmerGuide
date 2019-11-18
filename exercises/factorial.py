@@ -2,7 +2,7 @@ import sys
 import unittest
 
 
-def factorial(num: int) -> int:
+def factorial(num):
     """
     Return the factorial of the given number.
     """

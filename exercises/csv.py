@@ -16,7 +16,7 @@ from typing import List
 # Christoph,Smaul,19,Berlin
 #
 # Tip: The representation of the newline ("Enter") is '\n'
-def store_to_csv(raw_data: List[List[str]]) -> str:
+def store_to_csv(raw_data):
     """
     Return the given data in csv.
 
@@ -25,7 +25,7 @@ def store_to_csv(raw_data: List[List[str]]) -> str:
     pass
 
 
-def load_from_csv(data: str) -> List[List[str]]:
+def load_from_csv(data):
     """
     Given a csv string, return the data as a list of lists.
     """
