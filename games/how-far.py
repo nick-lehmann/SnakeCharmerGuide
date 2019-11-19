@@ -17,12 +17,12 @@
 # She has 5 Liters of gas left
 
 
-def remaining_km(efficency, liters):
-    return 100 / efficency * liters
+def remaining_km(efficiency, liters):
+    return 100 / efficiency * liters
 
 
-def will_we_make_it(name, efficency, liters, next_gas_station):
-    enough_gas = remaining_km(efficency, liters) > next_gas_station
+def will_we_make_it(name, efficiency, liters, next_gas_station):
+    enough_gas = remaining_km(efficiency, liters) > next_gas_station
     if enough_gas:
         print(f'{name} will make it to the gas station. 🚗')
     else:
@@ -32,3 +32,10 @@ def will_we_make_it(name, efficency, liters, next_gas_station):
 will_we_make_it('Renee', 10.9, 45, 420)
 will_we_make_it('Arnold', 4.9, 15, 285)
 will_we_make_it('Annabelle', 5.8, 5, 69)
+
+driver1 = ['Renee', 10.9, 45, 420]
+driver2 = ['Arnold', 4.9, 15, 285]
+driver3 = ['Annabelle', 5.8, 5, 69]
+
+
+

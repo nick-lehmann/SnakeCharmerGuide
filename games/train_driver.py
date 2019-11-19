@@ -2,7 +2,7 @@
 # You are driving a train from Berlin to Paris.
 # On the way to Paris you will stop in Hamburg, Amsterdam and Brussels before arriving in Paris.
 # Every time you depart you will need to tell the passengers that you are departing and what the next stop will be.
-# In paris tell the pasengers that that is the last stop
+# In paris tell the passengers that that is the last stop
 
 # Bonus Points: Do all the prints inside the loop.
 
