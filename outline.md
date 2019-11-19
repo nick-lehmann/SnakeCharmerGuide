@@ -58,13 +58,7 @@ Outline
 ## Session 4 (19.11.2019)
 
 Learning goals
-- Learn basics of lists (Game: The new friend)
-- 
-
-- Exercises
-  - weekend
-  - century
-  - palindrome
-  - string_basic
-  - list_basic
-  - csv
+- Learn basics of lists (Game: `The new friend`)
+- Exercise `How far` without bonus
+- Refactor with functions for bonus task
+- Start with normal exercises
