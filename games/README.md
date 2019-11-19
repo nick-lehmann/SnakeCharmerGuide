@@ -70,6 +70,24 @@ In paris tell the pasengers that that is the last stop
 
 Bonus Points: Do all the prints inside the loop.
 
+### ⛽️ How far can we make it?
+
+Renee is driving when she realises that her tank is almost empty.
+She knows her car burns a certain ammount of liters of gas every 100km.
+She also knows the distance to the next gas station.
+Will she make it or will she be stranded?
+
+Renee drives a Jaguar F-TYPE R that consumes 10,9 l/100km.
+The next gas station is in 420km.
+She has 45 Liters of gas left
+
+Arnold drives a Fiat 500 that consumes 4,9 l/100km.
+The next gas station is in 285km.
+He has 15 Liters of gas left
+
+Annabelle drives a Renault Espace that consumes 5,8 l/100km.
+The next gas station is in 69km.
+She has 5 Liters of gas left
 
 ### ⛰📃✂️ Rock-Paper-Scissors [Dictionaries]
 
