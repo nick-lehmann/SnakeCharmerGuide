@@ -27,18 +27,19 @@ Exercises
 ## Functions
 
 
-## String operations
-
-- **String Basics**: Basic operations on strings.
-- **Palindrome**: Check if a string is a palindrome.
-- **CSV**: Write and load csv files.
-
 ## Classes
 
 
 ## Exceptions
 
 - **Raise exceptions**: Write functions which raise exceptions.
+
+
+## String operations
+
+- **String Basics**: Basic operations on strings.
+- **Palindrome**: Check if a string is a palindrome.
+- **CSV**: Write and load csv files.
 
 
 ## Packages
