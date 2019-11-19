@@ -11,14 +11,14 @@ Milka the cow needs 10 grass to do 1 chocolate
 
 1. Define a variable called "rain" and one called "grass"
 2. With an "if" check if there is enough grass to make a chocolate
-3. If enough, print how many choccolates we can have, otherwise be sad
+3. If enough, print how many chocolates we can have, otherwise be sad
 
 Bonus Points: Give the cow a name and print it
 
 ### 🤺 Ninjas [If/Else]
 
 We need to fight 50 dragons.
-A ninja can defat 3 dragons.
+A ninja can defeat 3 dragons.
 Do we win or loose?
 
 1. Define a variable "ninjas" and one "dragons" and print if we win or loose based on the variables
@@ -34,7 +34,7 @@ Are all students in a group or is there someone alone?
 2. Check with the modulo operator "%" if there is someone left out in the gruop
 
 Bonus Points: How many additional students do you need to fill the group?
-Bonus Bnous Points: What group sizes are possible so that no one is left out?
+Bonus Bonus Points: What group sizes are possible so that no one is left out?
 
 ### 🙎‍♀️ The new friend [Lists]
 
@@ -70,10 +70,10 @@ In paris tell the passengers that is the last stop
 
 Bonus Points: Do all the prints inside the loop.
 
-### ⛽️ How far can we make it?
+### ⛽️ How far can we make it? [Functions]
 
 Renee is driving when she realises that her tank is almost empty.
-She knows her car burns a certain ammount of liters of gas every 100km.
+She knows her car burns a certain amount of liters of gas every 100km.
 She also knows the distance to the next gas station.
 Will she make it or will she be stranded?
 
@@ -88,6 +88,9 @@ He has 15 Liters of gas left
 Annabelle drives a Renault Espace that consumes 5,8 l/100km.
 The next gas station is in 69km.
 She has 5 Liters of gas left
+
+Bonus Points: Will the drivers make it if they drive slowly (+10% efficiency)?
+
 
 ### ⛰📃✂️ Rock-Paper-Scissors [Dictionaries]
 

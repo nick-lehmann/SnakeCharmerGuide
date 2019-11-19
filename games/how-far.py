@@ -1,6 +1,6 @@
 # How far can we make it?
 # Renee is driving when she realises that her tank is almost empty.
-# She knows her car burns a certain ammount of liters of gas every 100km.
+# She knows her car burns a certain amount of liters of gas every 100km.
 # She also knows the distance to the next gas station.
 # Will she make it or will she be stranded?
 
@@ -16,6 +16,8 @@
 # The next gas station is in 69km.
 # She has 5 Liters of gas left
 
+# Bonus Points: Will the drivers make it if they drive slowly (+10% efficiency)?
+
 
 def remaining_km(efficiency, liters):
     return 100 / efficiency * liters
@@ -23,8 +25,12 @@ def remaining_km(efficiency, liters):
 
 def will_we_make_it(name, efficiency, liters, next_gas_station):
     enough_gas = remaining_km(efficiency, liters) > next_gas_station
+    enough_gas_slow = remaining_km(efficiency*0.9, liters) > next_gas_station
+
     if enough_gas:
         print(f'{name} will make it to the gas station. 🚗')
+    elif enough_gas_slow:
+        print(f'{name} will make it, but slowly 🚲')
     else:
         print(f'{name} will be stranded on the way there 😢')
 
@@ -32,10 +38,3 @@ def will_we_make_it(name, efficiency, liters, next_gas_station):
 will_we_make_it('Renee', 10.9, 45, 420)
 will_we_make_it('Arnold', 4.9, 15, 285)
 will_we_make_it('Annabelle', 5.8, 5, 69)
-
-driver1 = ['Renee', 10.9, 45, 420]
-driver2 = ['Arnold', 4.9, 15, 285]
-driver3 = ['Annabelle', 5.8, 5, 69]
-
-
-

@@ -45,7 +45,6 @@ Outline
 Learning goals
 - Complete first test-based exercise
 - String operations
-- List operations
 
 Outline
 - Warmup game: Pairs
@@ -57,6 +56,10 @@ Outline
 
 
 ## Session 4 (19.11.2019)
+
+Learning goals
+- Learn basics of lists (Game: The new friend)
+- 
 
 - Exercises
   - weekend
