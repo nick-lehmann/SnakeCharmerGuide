@@ -19,6 +19,7 @@ Exercises
 ## Lists
 
 - **List basics**: Basic operations on lists
+- **Two teams**: Divide students into two teams.
 - **Lucky numbers**: Determine if a number is lucky.
 
 
