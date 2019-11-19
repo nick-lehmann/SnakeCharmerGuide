@@ -23,6 +23,7 @@ Exercises
 
 
 ## Loops
+- **Find element**: Find the index of an element inside a list.
 
 
 ## Functions

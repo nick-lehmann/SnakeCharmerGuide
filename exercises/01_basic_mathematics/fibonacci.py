@@ -1,6 +1,5 @@
 """ Calculate the fibonacci numbers. """
 import unittest
-from typing import List
 
 
 def fibonacci(num: int) -> int:
