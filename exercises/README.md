@@ -7,6 +7,7 @@ Exercises
 - **Century**: Decide if a given year is a leap year.
 - **Even/Odd**: Decide if a number is even or odd.
 - **Factorial**: Calculate the factorial of a given number.
+- **Fibonacci**: Calculate the fibonacci numbers.
 
 
 ## Control flow (if/else)
