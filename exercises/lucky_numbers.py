@@ -1,3 +1,4 @@
+""" Determine if a number is lucky. """
 import unittest
 
 
@@ -8,6 +9,9 @@ def is_lucky(number: int) -> bool:
     A ticket number always consists of an even amount of digits.
     It is considered lucky if the sum of the first half of digits
     is the same as the sum of the second half.
+
+    TIP: The sum() takes a list as an argument and returns the sum
+    of all elements.
     """
     pass
 

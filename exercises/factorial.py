@@ -1,3 +1,4 @@
+""" Calculate the factorial of a given number. """
 import unittest
 
 

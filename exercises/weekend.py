@@ -1,3 +1,4 @@
+""" Decide what to do on a weekend. """
 import unittest
 
 
