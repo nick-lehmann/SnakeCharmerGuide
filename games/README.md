@@ -79,7 +79,7 @@ Will she make it or will she be stranded?
 
 Renee drives a Jaguar F-TYPE R that consumes 10,9 l/100km.
 The next gas station is in 420km.
-She has 45 Liters of gas left
+She has 40 Liters of gas left
 
 Arnold drives a Fiat 500 that consumes 4,9 l/100km.
 The next gas station is in 285km.
@@ -87,7 +87,7 @@ He has 15 Liters of gas left
 
 Annabelle drives a Renault Espace that consumes 5,8 l/100km.
 The next gas station is in 69km.
-She has 5 Liters of gas left
+She has 4 Liters of gas left
 
 Bonus Points: Will the drivers make it if they drive slowly (+10% efficiency)?
 
