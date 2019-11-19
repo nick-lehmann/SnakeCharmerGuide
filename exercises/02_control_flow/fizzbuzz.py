@@ -1,3 +1,4 @@
+""" Play the fizzbuzz game. """
 import unittest
 from unittest.mock import patch, call
 

@@ -1,3 +1,4 @@
+""" Basic operations on strings. """
 import unittest
 
 

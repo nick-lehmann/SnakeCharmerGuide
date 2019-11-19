@@ -1,3 +1,4 @@
+""" Write functions which raise exceptions. """
 import unittest
 
 
