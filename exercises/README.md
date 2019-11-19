@@ -24,6 +24,7 @@ Exercises
 
 ## Loops
 - **Find element**: Find the index of an element inside a list.
+- **Beautiful lists**:  Transform ugly lists into beautiful ones. 
 
 
 ## Functions
