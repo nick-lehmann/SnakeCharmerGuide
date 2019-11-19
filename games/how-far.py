@@ -6,7 +6,7 @@
 
 # Renee drives a Jaguar F-TYPE R that consumes 10,9 l/100km.
 # The next gas station is in 420km.
-# She has 45 Liters of gas left
+# She has 40 Liters of gas left
 
 # Arnold drives a Fiat 500 that consumes 4,9 l/100km.
 # The next gas station is in 285km.
@@ -14,27 +14,31 @@
 
 # Annabelle drives a Renault Espace that consumes 5,8 l/100km.
 # The next gas station is in 69km.
-# She has 5 Liters of gas left
+# She has 4 Liters of gas left
 
 # Bonus Points: Will the drivers make it if they drive slowly (+10% efficiency)?
 
 
-def remaining_km(efficiency, liters):
-    return 100 / efficiency * liters
+def remaining_km(consumption, liters):
+    return 100 / consumption * liters
 
 
-def will_we_make_it(name, efficiency, liters, next_gas_station):
-    enough_gas = remaining_km(efficiency, liters) > next_gas_station
-    enough_gas_slow = remaining_km(efficiency*0.9, liters) > next_gas_station
+def enough_gas(consumption, liters, next_gas_station):
+    return remaining_km(consumption, liters) > next_gas_station
 
-    if enough_gas:
+
+def will_we_make_it(name, consumption, liters, next_gas_station):
+    normal = enough_gas(consumption, liters, next_gas_station)
+    slow = enough_gas(consumption * 0.9, liters, next_gas_station)
+
+    if normal:
         print(f'{name} will make it to the gas station. 🚗')
-    elif enough_gas_slow:
-        print(f'{name} will make it, but slowly 🚲')
+    elif slow:
+        print(f'{name} can make it if they drive slowly 🐌')
     else:
         print(f'{name} will be stranded on the way there 😢')
 
 
-will_we_make_it('Renee', 10.9, 45, 420)
+will_we_make_it('Renee', 10.9, 40, 420)
 will_we_make_it('Arnold', 4.9, 15, 285)
-will_we_make_it('Annabelle', 5.8, 5, 69)
+will_we_make_it('Annabelle', 5.8, 4, 69)
