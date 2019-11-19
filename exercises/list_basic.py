@@ -3,7 +3,7 @@ import unittest
 from typing import List
 
 
-def list_ends(input_list):
+def list_ends(input_list: List[int]) -> List[int]:
     """
     Return a list that just contains the first and the last element
     of the given list.
@@ -11,7 +11,7 @@ def list_ends(input_list):
     pass
 
 
-def find_elements_less_than_10(input_list):
+def find_elements_less_than_10(input_list: List[int]) -> List[int]:
     """
     Return a list of all elements in input_list which are less than ten.
     """

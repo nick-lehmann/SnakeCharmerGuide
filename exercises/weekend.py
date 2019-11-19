@@ -2,7 +2,7 @@ import sys
 import unittest
 
 
-def weekend_activity(friend_available, nice_weather):
+def weekend_activity(friend_available: bool, nice_weather: bool) -> str:
     """
     Return the appropriate weekend activity based on whether a friend
     is available and the upcoming weather.
@@ -10,7 +10,7 @@ def weekend_activity(friend_available, nice_weather):
     Possible return values are:
     - Go for a walk
     - Swimming
-    - Homework
+    # - Homework
     - Cinema
     """
     pass
