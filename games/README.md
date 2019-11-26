@@ -92,6 +92,17 @@ She has 4 Liters of gas left
 Bonus Points: Will the drivers make it if they drive slowly (+10% efficiency)?
 
 
+### 🙍🏼‍️🙍🏼‍️🙍🏼‍ The oldest
+
+You have some students and know how old they are. Mike is 19, Peter is 20, Michelle is 22 and Nicole is 20.
+
+1. Save the age of each student in a dictionary.
+2. Add the student Max who is 18 years old.
+3. Today is Michelle's birthday, so make Michelle her one year older.
+4. Choose a name and check if there is a student with this name.
+5. Find the oldest student and print his name and age.
+
+
 ### ⛰📃✂️ Rock-Paper-Scissors [Dictionaries]
 
 You want to play rock-paper-scissors against the computer.
