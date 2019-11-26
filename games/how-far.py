@@ -39,6 +39,13 @@ def will_we_make_it(name, consumption, liters, next_gas_station):
         print(f'{name} will be stranded on the way there 😢')
 
 
+# Using normal parameters
 will_we_make_it('Renee', 10.9, 40, 420)
 will_we_make_it('Arnold', 4.9, 15, 285)
 will_we_make_it('Annabelle', 5.8, 4, 69)
+
+
+# Using named parameters
+will_we_make_it('Renee', consumption=10.9, liters=40, next_gas_station=420)
+will_we_make_it('Arnold', consumption=4.9, liters=15, next_gas_station=285)
+will_we_make_it('Annabelle', consumption=5.8, liters=4, next_gas_station=69)

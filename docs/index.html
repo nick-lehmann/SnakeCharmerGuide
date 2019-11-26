@@ -20,7 +20,7 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="QWWXHYOlr/qj3z6SCMiAS6uh7re/bQIB4HwGeIaGtZHVP8EWf0jzS8iaS8ukHzm0I4OhSSK8XzrLyM3ACEcQXw==" />
+<meta name="csrf-token" content="+EJOsgZBk9bMf0wwTnDJrLDsBcsadDQVjd+L2OBkgTS/0fOXaDIX2DjltySEa4zk8qDvJRicvXeSgihhamLQug==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -763,16 +763,90 @@ greet('Batman') # "Hello Batman 👋"</code></pre></div></div></section><section
 <h1><strong>Named Parameters</strong></h1>
 </div></div>
 
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 361px; left: 80px; top: 71px;" data-block-id="7d5f067ee33cceb52bfdbee51555bee6"><div class="sl-block-content notranslate fragment fade-right" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true" data-fragment-index="0"><pre class="python"><code data-line-numbers="" style="padding: 30px;">def eat(pizza, slices):
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 217px; left: 80px; top: 71px;" data-block-id="7d5f067ee33cceb52bfdbee51555bee6"><div class="sl-block-content notranslate fragment fade-right" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true" data-fragment-index="0"><pre class="python"><code data-line-numbers="" style="padding: 30px;">def eat(pizza, slices):
   print(f"Eating a pizza {pizza} with {slices} slices")</code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="04852a960fdcb6d67df9d91419b360c4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 200%; color: rgb(238, 238, 238);">
 <p style="text-align:right">Functions</p>
 </div></div>
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 359px; left: 80px; top: 504px;" data-block-id="c092c7747adb549344fa3e9d79cfadc8"><div class="sl-block-content notranslate fragment fade-left" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14; font-size: 250%;" data-code-wrap="true" data-fragment-index="1"><pre class="python"><code data-line-numbers="" style="padding: 30px;">eat('Margherita', 8)
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 503px; left: 80px; top: 360px;" data-block-id="c092c7747adb549344fa3e9d79cfadc8"><div class="sl-block-content notranslate fragment fade-left" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14; font-size: 250%;" data-code-wrap="true" data-fragment-index="1"><pre class="python"><code data-line-numbers="" style="padding: 30px;">eat('Margherita', 8) # ✔
 
-eat(pizza='Margherita', slices=8)
+eat(pizza='Margherita', slices=8) # ✔
 
-eat(slices=8, pizza='Margherita')</code></pre></div></div></section><section data-background-color="#000000" data-id="c0d204005da4b2578327aace77834fac"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="2480f9792f27c445b8894ada68af7695"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+eat(slices=8, pizza='Margherita') # ✔
+
+eat('Margherita', slices=8) # ✔
+
+eat(slices=8, 'Margherita') # ❌</code></pre></div></div></section><section data-background-color="#000000" data-id="657982d6273890ded5b5fb409de605f5"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="32d13e1892c99b7aaa0c4da08c12af31"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Scope</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="18b4090ac81ff343fd8c3935edc8dc22"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 300%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">name = 'Milka'
+
+def hi():
+  print(f'Hi {name}')
+
+
+hi()</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="337cb686cfc8a8f1de1951dd848f4bf3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section><section data-background-color="#000000" data-id="696423b5ea252ba63e833ae2ae619c84"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="d30d6a6dabf74b9cf8174b99264e25e1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Scope</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="ecb82b26a3311525b76935d56bac13f9"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 300%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">name = 'Milka'
+
+def hi():
+  name = 'Paula'
+
+hi()
+
+print(f'Hi {name}')</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="6b9af036c5609abe826eac2a7774122b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section><section data-background-color="#000000" data-id="bad1702ddb6263b1a4eea6c8feb8ebcb"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="1e7d81cd3d5aac4d0acca402652cd1e5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Scope</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="cb5a07094417af8e294252bd7f563504"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 300%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">x = 0
+
+def do_stuff():
+  x = 1
+
+do_stuff()
+
+print(x)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="a810dbf47a5f30e63b2489e989de4f2a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section><section data-background-color="#000000" data-id="eb574a745238f99642d33dd98a898cfc"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="d3fcfe6880fe5cbd762a0e84967fb4cc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Scope</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="56ecfa39c25c64504c30f753b9923a77"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 300%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">x = 0
+
+def do_stuff():
+  x = x + 1
+
+do_stuff()
+
+print(x)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="2e97e45f6d6172351ebb6c2609f22d02"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section><section data-background-color="#000000" data-id="00d72d3bced52789eec058bfa8cdc0a8"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="12cb180b5d772ef43b35e9592f363714"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Scope</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="ad8cc0be7377d26f2324b138baee4d1f"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 300%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">x = 0
+
+def do_stuff():
+  global x
+  x = x + 1
+
+do_stuff()
+
+print(x)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="42b90cfdce2087ecc81ded1e40ef2087"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Functions</p>
+</div></div></section><section data-background-color="#000000" data-id="c0d204005da4b2578327aace77834fac"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="2480f9792f27c445b8894ada68af7695"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
 <h1><strong>Overview</strong></h1>
 </div></div>
 
@@ -800,90 +874,245 @@ c = add(1, 2)
 def gradient(x, y):
   return y / x
 
-m = gradient(y=5, x=10)</code></pre></div></div></section></section><section class="stack" data-id="6e80a711d0c306c94c7b95d4be544b0b"><section data-background-color="#fbfff3" data-id="ae4ee0d4619f1ac94a8431944bade443"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="5a557b1e3e4e311000f87f9005874094"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
-<h1><strong>Errors</strong></h1>
+m = gradient(y=5, x=10)</code></pre></div></div></section></section><section class="stack" data-id="e51cbb39ee22a65f01c60d2cdcde08fc"><section data-background-color="#fbfff3" data-id="21c45642b68703105e47c379c3f6f8b3"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="8a8f43020b3448fc61c280ca4b5c0551"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+<h1><strong>Dicts</strong></h1>
 </div></div>
 
-</section><section data-background-color="#000000" data-id="3c49544a8496bc3fc22ccfb04338b450"><div class="sl-block" data-block-type="text" style="width: 1280px; left: 80px; top: 911px; height: auto;" data-block-id="f438951645c61c52b70ff05f55637bb5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>Title</strong></h1>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1760px; left: 80px; top: 432px;" data-block-id="518f25d43233cb9b1fec4739bb4d333c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 125%; color: rgb(0, 0, 0);">
+<ul>
+	<li class="fade-in-then-semi-out fragment" data-fragment-index="0"><span style="font-size:1.8em">A.k.a Maps</span></li>
+	<li class="fade-in-then-semi-out fragment" data-fragment-index="0"><span style="font-size:1.8em">Key-Value pairs</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1760px; left: 80px; top: 789px;" data-block-id="6fb16d107271956d24f3e42769302028"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 125%; color: rgb(0, 0, 0);">
+<ul>
+	<li class="fragment" data-fragment-index="1"><span style="font-size:1.8em">Group data together</span></li>
+	<li class="fragment" data-fragment-index="1"><span style="font-size:1.8em">Less variables</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 335px; height: auto;" data-block-id="58edeacc46bb1e3c4257cade1eaf157c"><div class="sl-block-content fragment fade-in-then-semi-out" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 17; color: rgb(0, 0, 0);" data-fragment-index="0">
+<h1><strong>What?</strong></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 692px; height: auto;" data-block-id="e05ce6792b67dfd5d693e10f3d2a86d2"><div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 18; color: rgb(0, 0, 0);" data-fragment-index="1">
+<h1><strong>Why?</strong></h1>
+</div></div></section><section data-background-color="#000000" data-id="ef82df8001991b5bc71404fd01207aab"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="368db61bfb7e58e77709a3d76ec8129e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Syntax</strong></h1>
 </div></div>
 
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="94980ed81e100e8847289c633a9b165a"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">def main():
-  print("Hello 👋")</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="b2ca75ccc072119bdb1d452fa41e5eec"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
-<p style="text-align:right">Errors</p>
-</div></div></section></section><section class="stack" data-id="f50cff49b3d5b5ed308cc4d76edcb2d3"><section data-background-color="#fbfff3" data-id="38e6c1e2281a6f106c6e89f5d7f7c52c"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="40c28eab1a426737d0c0cc56124513ac"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="0dde33b8206b246c490dbb716bd051d3"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">{
+  key1: value1,
+  key2: value2,
+  ...
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="b47fb891661184f7564feae2453f04a2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Dict</p>
+</div></div></section><section data-background-color="#000000" data-id="0eabd4daa66d1ab84f6269bc423a3795"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="65a841a5920c89e70289c78fc1367823"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Assignment</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="c5e05de2f0d57a92c997052054d1a893"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">person = {
+    'age': 23,
+    'name': 'Nicco'
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="6e959d502a11d6f25f3d63047ee4719c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Dicts</p>
+</div></div></section><section data-background-color="#000000" data-id="0888a7651701be083279dea9a0f50140"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="752b3e9616fafb78e64557858236a97c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Reading</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 360px; left: 80px; top: 72px;" data-block-id="70f84c72683e9a4096828180b210118e"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">person = {
+    'age': 23,
+    'name': 'Nicco'
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="6e5d7a327adec5e4c566138f33116f27"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Dicts</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 360px; left: 80px; top: 504px;" data-block-id="5c3f798047c251128d73f882a0bdc9a3"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">person['age']  # 23
+person['name']  # Nicco</code></pre></div></div></section><section data-background-color="#000000" data-id="ac13165be46ee39d3fc26511021aafbf"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="126961e2904adf93a9f478e330df07b8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Writing</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 786px; left: 80px; top: 72px;" data-block-id="60e41da1c66c6b9f3c86756614ff40a1"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">person = {
+    person['name'] = 'Nicco'
+}
+
+person['name']  # Nicco
+
+person['name'] = 'Josh'
+person['name']  # Josh
+
+person['age'] = 18
+person['age']  # 18
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="f9129eb1f74686ae64d7981ec3744d8c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Dicts</p>
+</div></div></section><section data-background-color="#000000" data-id="6698a5f479e620debc9ae3e8a604e620"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="330cd496a4d6385d7401ac5c5c3c1ab7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Iterating</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 360px; left: 80px; top: 72px;" data-block-id="a5c588f7009526012a68eb3d10b073ec"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 200%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">person = {
+    'name': 'Elon Musk',
+    'age': 48,
+    'height': 184,
+    'worth': '23,7 Billion',
+    'companies': ['Paypal', 'SpaceX', 'Tesla']
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="e20dfd6f7a3eb3d3581453d1d6bec6eb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Dicts</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 360px; left: 80px; top: 504px;" data-block-id="faadb13fa48ee33fcdcb319abd65e37d"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14; font-size: 200%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">for key in person.keys():
+    print(key)  # name, age, height, worth, companies
+
+for value in person.values():
+    print(value)  # Elon Musk, 48, 184, ...
+
+for key, value in person.items():
+    print(f'{key} has the value: {value}')</code></pre></div></div></section></section><section class="stack" data-id="f50cff49b3d5b5ed308cc4d76edcb2d3"><section data-background-color="#fbfff3" data-id="38e6c1e2281a6f106c6e89f5d7f7c52c"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="40c28eab1a426737d0c0cc56124513ac"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
 <h1><strong>Classes</strong></h1>
 </div></div>
 
-</section><section data-background-color="#000000" data-id="fbe3fa35fba3e2af3ceb22f9c20a8855"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="75445f2b5c649b3137e5f67d36bce44e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>Overview</strong></h1>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1760px; left: 80px; top: 432px;" data-block-id="1e116f7c7fffdf85b20bd99ec5e46567"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 125%; color: rgb(0, 0, 0);">
+<ul>
+	<li class="fade-in-then-semi-out fragment" data-fragment-index="0"><span style="font-size:1.8em">Group functions and variables together</span></li>
+	<li class="fade-in-then-semi-out fragment" data-fragment-index="0"><span style="font-size:1.8em">Basis of Object Oriented Programming (OOP)</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1760px; left: 80px; top: 789px;" data-block-id="852be08a61d1b16d3449d9a6dd97973f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 125%; color: rgb(0, 0, 0);">
+<ul>
+	<li class="fragment" data-fragment-index="1"><span style="font-size:1.8em">Group logic that belongs together</span></li>
+	<li class="fragment" data-fragment-index="1"><span style="font-size:1.8em">Domain specific code</span></li>
+	<li class="fragment" data-fragment-index="1"><span style="font-size:1.8em">Extendable</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 335px; height: auto;" data-block-id="9a327df4f550d03cdfa93874572eb39f"><div class="sl-block-content fragment fade-in-then-semi-out" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13; color: rgb(0, 0, 0);" data-fragment-index="0">
+<h1><strong>What?</strong></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 692px; height: auto;" data-block-id="ee96c1500b7cf18f89767c3924359947"><div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 15; color: rgb(0, 0, 0);" data-fragment-index="1">
+<h1><strong>Why?</strong></h1>
+</div></div></section><section data-background-color="#fbfff3" data-id="1bd95873d1ccc3abb5607898b58eb8bd">
+
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 1280px; height: 432px; left: 320px; top: 324px;" data-block-id="1ce137985692c067ed72104a0587bd9b"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 10;" data-shape-corner-radius="30px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1280 432"><rect width="1280" height="432" rx="30" ry="30" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 660px; top: 648px;" data-block-id="9a32a3528fc4b8c63ba83e7f5ed29cbc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<pre style="text-align:center"><span style="font-size:2.0em">class</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="e63e20f0077cb9aa71cef40045f9c564" style="min-width: 4px; min-height: 4px; width: 480px; height: 216px; left: 400px; top: 396px;"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(235, 86, 197)" data-shape-stretch="true" style="z-index: 12;" data-shape-corner-radius="30px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 480 216"><rect width="480" height="216" rx="30" ry="30" class="shape-element" fill="rgb(235, 86, 197)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 480px; height: 216px; left: 1040px; top: 396px;" data-block-id="ab8801c8e3cad943cf63d1a9d20fd181"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(235, 86, 197)" data-shape-stretch="true" style="z-index: 13;" data-shape-corner-radius="30px" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 480 216"><rect width="480" height="216" rx="30" ry="30" class="shape-element" fill="rgb(235, 86, 197)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 340px; top: 450px;" data-block-id="a545ec0ddc77e785f8305bdf2cfbbd3e"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="0">
+<pre style="text-align:center"><span style="font-size:2.0em">attributes</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 980px; top: 450px;" data-block-id="77894262bce7d5ccc0fa7025ee6d48cf"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-fragment-index="1">
+<pre style="text-align:center"><span style="font-size:2.0em">methods</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 340px; top: 515px;" data-block-id="9fb99477f1d81569fd59df94c65147d8"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="2">
+<pre style="text-align:center"><span style="font-size:1.2em">(variables)</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 980px; top: 515px;" data-block-id="2fada7bd810e4bd3b63d30fdf7a61d43"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;" data-fragment-index="3">
+<pre style="text-align:center"><span style="font-size:1.2em">(functions)</span></pre>
+</div></div></section><section data-background-color="#fbfff3" data-id="f5f5da5e223a06a92a42a33df380bc3c">
+
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 640px; height: 216px; left: 80px; top: 432px;" data-block-id="d20e99ebd7f4ffc30a93d2b2d90070dd"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 10;" data-shape-corner-radius="30px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 640 216"><rect width="640" height="216" rx="30" ry="30" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 100px; top: 504px;" data-block-id="60ff74019821e504a6872a04deeb9dab"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<pre style="text-align:center"><span style="font-size:2.0em">class (1)</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 640px; height: 216px; left: 1200px; top: 432px;" data-block-id="edc098157fd9a7d1d2e6a94ff3ee85af"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 13;" data-shape-corner-radius="30px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 640 216"><rect width="640" height="216" rx="30" ry="30" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 1220px; top: 504px;" data-block-id="b2c055de898dc725a177abe534fc3247"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<pre style="text-align:center"><span style="font-size:2.0em">instance (0..n)</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="line" data-block-id="c560af6604cdd32111517e662379f47a" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 800px; top: 540px;"><div class="sl-block-content" data-line-x1="-60" data-line-y1="100" data-line-x2="260" data-line-y2="100" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="line-arrow" style="z-index: 15;" data-line-width="10px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="320" height="1" viewbox="-60 100 320 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-52" y1="100" x2="253" y2="100"></line><line stroke="#000000" stroke-width="10" x1="-52" y1="100" x2="253" y2="100"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="10" transform="translate(-52,100) rotate(90)" d="M -22.5 -22.5 L 0 0 L 22.5 -22.5"></path><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="10" transform="translate(253,100) rotate(90)" d="M 22.5 22.5 L 0 0 L -22.5 22.5"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 320px; left: 800px; top: 552px;" data-block-id="4e142e077cee4ebb16a3673278235ede"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 125%; color: rgb(0, 0, 0);">
+<p class="fade-left fragment" data-fragment-index="0"><span style="font-size:1.0em">VS</span></p>
+</div></div></section><section data-background-color="#fbfff3" data-id="c5f6037e7c93038073224217cc90f868"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="7ae55255010678f76b9c9dd5dc74e1bc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+<h1><strong>Phone</strong></h1>
 </div></div>
 
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="7789f3d637301b86ea0e43ce71209d09"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 235%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
-    wheels = 4
-    top_speed = 100
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 0px; top: 0px;" data-block-id="6952c7c590f4da21ec78cb986f8c3044"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(0, 0, 0); font-size: 150%; text-align: left; padding: 10px;">
+<p><span style="font-size:1.0em">Classes</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 335px; height: auto;" data-block-id="a9b1a6864fdd2ca8101572cd37c1cea7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; color: rgb(0, 0, 0);" dir="ui">
+<h1><strong>Class</strong></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 1040px; top: 335px; height: auto;" data-block-id="799c60ac16bb098e43828687e435e612"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13; color: rgb(0, 0, 0);" dir="ui">
+<h1><strong>Instance</strong></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 1040px; top: 504px;" data-block-id="4b009692e6a2f2c96400d9fbd57edc08"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 125%; color: rgb(0, 0, 0);">
+<ol>
+	<li class="fragment" data-fragment-index="2"><span style="font-size:1.8em">My phone with phone number 0176...</span></li>
+	<li class="fragment" data-fragment-index="3"><span style="font-size:1.8em">Your phone with nuber 0123...</span></li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 504px;" data-block-id="e32eb44936ced49c830c1119a6753082"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 125%; color: rgb(0, 0, 0);">
+<ul>
+	<li class="fragment" style="font-size:67.5px" data-fragment-index="0"><span style="font-size:67.5px">A phone number</span></li>
+	<li class="fragment" style="font-size:67.5px" data-fragment-index="1"><span style="font-size:67.5px">Make a call with the phone number</span></li>
+</ul>
+</div></div></section><section data-background-color="#fbfff3" data-id="b24e04926757b861394d2ae054454a12"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="09b77d4d127fd94c7404f769a8df07e3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+<h1><strong>Person</strong></h1>
+</div></div>
 
-    def __init__(self, color):
-        self.color = color
-
-    def drive(self):
-        print(f'Brumm Brumm in {self.color}')
-
-
-car_one = Car('Red')
-car_one.drive()
-
-car_two = Car('White')
-car_two.drive()
-</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="5800d6773e4aeb059c5a9061f37d1702"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
-<p style="text-align:right">Classes</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 0px; top: 0px;" data-block-id="5a716d7b58010d862da6d171d21ff45f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(0, 0, 0); font-size: 150%; text-align: left; padding: 10px;">
+<p><span style="font-size:1.0em">Classes</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 335px; height: auto;" data-block-id="5cd3a0c160362bcb6740f9e05651a98c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; color: rgb(0, 0, 0);" dir="ui">
+<h1><strong>Class</strong></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 1040px; top: 335px; height: auto;" data-block-id="4454747c8bdfcf384ca30c52753a3430"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13; color: rgb(0, 0, 0);" dir="ui">
+<h1><strong>Instance</strong></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 1040px; top: 504px;" data-block-id="3fb0520ad0ccef1aaabfb189d14d7ee0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 125%; color: rgb(0, 0, 0);">
+<ol>
+	<li class="fragment" data-fragment-index="2"><span style="font-size:1.8em">Nicco, 23 yo</span></li>
+	<li class="fragment" data-fragment-index="3"><span style="font-size:67.5px">Céline, 22 yo</span></li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 504px;" data-block-id="04f9ad4dc189e7a3e55db412f108a973"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 125%; color: rgb(0, 0, 0);">
+<ul>
+	<li class="fragment" data-fragment-index="0" style="font-size:67.5px">Name</li>
+	<li class="fragment" data-fragment-index="1" style="font-size:67.5px"><span style="font-size:67.5px">Age</span></li>
+</ul>
 </div></div></section><section data-background-color="#000000" data-id="09755c0faebd907fbf871c53c771b555"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="c1f50ab9b488dbe63927af2161f22fad"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
 <h1><strong>Basics</strong></h1>
 </div></div>
 
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="6ee3dc5c216e9ffe91c482fa097934c0"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="6ee3dc5c216e9ffe91c482fa097934c0"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 200%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
     pass
 </code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="e4dbdc209bf0e5b2c20608b8899c4d39"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
 <p style="text-align:right"><span style="color:rgb(238, 238, 238); text-align:right">Classes</span></p>
 </div></div></section><section data-background-color="#000000" data-id="fc071f173dbe20a1d15b61ec9aa04205"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="389ab77810be574fff1229408ec88304"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>Variables</strong></h1>
+<h1><strong>Attributes</strong></h1>
 </div></div>
 
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="b328d4402957bdfb2795bee52de604d0"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
-    wheels = 5
-    safe = True
-
-
-car = Car()
-
-print(car.wheels)
-print(car.safe)
-</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="1538836231f54ebca71de975fd42958c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 360px; left: 80px; top: 72px;" data-block-id="b328d4402957bdfb2795bee52de604d0"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 200%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
+    wheels = 5</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="1538836231f54ebca71de975fd42958c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 200%; color: rgb(238, 238, 238);">
 <p style="text-align:right"><span style="color:rgb(238, 238, 238); text-align:right">Classes</span></p>
-</div></div></section><section data-background-color="#000000" data-id="035e00207cfa0b9af1501e34daeb36dc"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="f9b9cc8d8e951f7da7546ff95ed5deaa"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 360px; left: 80px; top: 504px;" data-block-id="2da3e85355ecc4119095cacfe12f3f19"><div class="sl-block-content notranslate fragment" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14; font-size: 200%;" data-code-wrap="true" data-fragment-index="0"><pre class="python"><code data-line-numbers="" style="padding: 30px;">my_first_car = Car()
+print(my_first_car.wheels)
+
+my_second_car = Car()
+print(my_second_car.wheels)</code></pre></div></div></section><section data-background-color="#000000" data-id="035e00207cfa0b9af1501e34daeb36dc"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="f9b9cc8d8e951f7da7546ff95ed5deaa"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
 <h1><strong>Methods</strong></h1>
 </div></div>
 
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="1d7383e6a4a3051c6ad1e32c11995ec5"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 360px; left: 80px; top: 72px;" data-block-id="1d7383e6a4a3051c6ad1e32c11995ec5"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 200%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
+    wheels = 5
 
     def drive(self):
-        print('Letse go')
-
-
-car = Car()
-car.drive()
-</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="0c3b45de6ec2723f1dc0e616472ab01f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+        print('Letse go')</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="0c3b45de6ec2723f1dc0e616472ab01f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 200%; color: rgb(238, 238, 238);">
 <p style="text-align:right"><span style="color:rgb(238, 238, 238); text-align:right">Classes</span></p>
-</div></div></section><section data-background-color="#000000" data-id="3368c686c3cb9bd1fded092098c2c251"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="9e289a7cf23ebc1b0b53fe445337a965"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 360px; left: 80px; top: 504px;" data-block-id="739ec1b49ba7034a0eb6f71bce5dcf6e"><div class="sl-block-content notranslate fragment" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14; font-size: 200%;" data-code-wrap="true" data-fragment-index="0"><pre class="python"><code data-line-numbers="" style="padding: 30px;">my_first_car = Car()
+my_first_car.drive()
+
+my_second_car = Car()
+my_second_car.drive()</code></pre></div></div></section><section data-background-color="#000000" data-id="3368c686c3cb9bd1fded092098c2c251"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="9e289a7cf23ebc1b0b53fe445337a965"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
 <h1><strong>Constructor</strong></h1>
 </div></div>
 
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="01edc69ec55f1db750f4ef67d3923468"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 432px; left: 80px; top: 72px;" data-block-id="01edc69ec55f1db750f4ef67d3923468"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 200%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
+    wheels = 5
 
     def __init__(self, speed):
         self.speed = speed
@@ -891,20 +1120,20 @@ car.drive()
     def drive(self):
         print(f'Driving with {self.speed} m/s')
 
-
-fast = Car(5)
-slow = Car(2)
-
-fast.drive()
-slow.drive()
 </code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="70e0160171245bac115c75377de2ff1a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="70e0160171245bac115c75377de2ff1a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 200%; color: rgb(238, 238, 238);">
 <p style="text-align:right"><span style="color:rgb(238, 238, 238); text-align:right">Classes</span></p>
-</div></div></section><section data-background-color="#000000" data-id="95e324b77fb5f253c8db3590165c0172"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="3c25fe0b0e99db9e528c83eafd46956b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>Properties</strong></h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 296px; left: 80px; top: 576px;" data-block-id="3a6bd11774c7df6f20f1a7e8a49d697d"><div class="sl-block-content notranslate fragment" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14; font-size: 200%;" data-code-wrap="true" data-fragment-index="0"><pre class="python"><code data-line-numbers="" style="padding: 30px;">my_first_car = Car(2)
+my_first_car.drive()  # Driving with 2 m/s
+
+my_second_car = Car(5)
+my_second_car.drive()  # Driving with 5 m/s
+</code></pre></div></div></section><section data-background-color="#000000" data-id="95e324b77fb5f253c8db3590165c0172"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="3c25fe0b0e99db9e528c83eafd46956b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Example</strong></h1>
 </div></div>
 
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="b4057e0de7297ab0c5fa0356abf82a64"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 220%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
+<div class="sl-block" data-block-type="code" style="width: 1015px; height: 792px; left: 80px; top: 72px;" data-block-id="b4057e0de7297ab0c5fa0356abf82a64"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 175%;" data-code-wrap="true"><pre class="python"><code style="padding: 30px;" data-line-numbers="">class Car:
     passengers = 0
     capacity = 5
 
@@ -912,19 +1141,23 @@ slow.drive()
         self.passengers += how_many
 
     def available_seats(self):
-        return self.capacity - self.passengers
-
-
-empty_car = Car()
-empty_car.get_in(1)
-empty_car.get_in(3)
-
-print(empty_car.passengers)
-print(empty_car.available_seats())
-</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="0e5f2a029710f848c47b76963853ba9b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+        available = self.capacity - self.passengers
+        print(available)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="0e5f2a029710f848c47b76963853ba9b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 200%; color: rgb(238, 238, 238);">
 <p style="text-align:right"><span style="color:rgb(238, 238, 238); text-align:right">Classes</span></p>
-</div></div></section><section data-background-color="#000000" data-id="eabe55113df881ab90b6c1ba6a6394a0"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="050d2230139e41bbdefd655401013411"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 720px; height: 799px; left: 1120px; top: 65px;" data-block-id="703f5d06147e4d1d91bc1328e16e7d6b"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14; font-size: 175%;" data-code-wrap="true"><pre class="python"><code style="padding: 30px;">my_first_car = Car()
+my_second_car = Car()
+
+my_first_car.available_seats()  # 5
+
+my_first_car.get_in(1)
+my_first_car.available_seats()  # 4
+
+my_first_car.get_in(3)
+my_first_car.available_seats()  # 1
+
+my_second_car.available_seats()  # 5</code></pre></div></div></section><section data-background-color="#000000" data-id="eabe55113df881ab90b6c1ba6a6394a0"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="050d2230139e41bbdefd655401013411"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
 <h1><strong>Readable</strong></h1>
 </div></div>
 
@@ -1035,6 +1268,29 @@ print(truck)
 </div></div>
 <div class="sl-block" data-block-type="text" data-block-id="1ecbc1a0ba42348607bb6ed1623c8dcb" style="height: auto; min-width: 30px; min-height: 30px; width: 1169px; left: 376px; top: 792px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="0">
 <p><a href="https://docs.python.org/3/reference/datamodel.html" target="_blank">docs.python.org/3/reference/datamodel.html</a></p>
+</div></div></section><section data-background-color="#000000" data-id="fbe3fa35fba3e2af3ceb22f9c20a8855"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="75445f2b5c649b3137e5f67d36bce44e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Overview</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="7789f3d637301b86ea0e43ce71209d09"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 235%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
+    wheels = 4
+    top_speed = 100
+
+    def __init__(self, color):
+        self.color = color
+
+    def drive(self):
+        print(f'Brumm Brumm in {self.color}')
+
+
+car_one = Car('Red')
+car_one.drive()
+
+car_two = Car('White')
+car_two.drive()
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="5800d6773e4aeb059c5a9061f37d1702"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Classes</p>
 </div></div></section></section><section data-background-color="#fbfff3" data-id="519edadcd97b9272ef074895572b6ce8"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="ba2b50be92586baf9ba1eea299ecd190"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
 <h1><strong>Modules &amp; Imports</strong></h1>
 </div></div>
@@ -1045,7 +1301,7 @@ print(truck)
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":"dark","phone_number":null,"phone_country_code":null,"media_sources":"unsplash","export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"hi@nicco.io","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":645257,"storage_limit":262144000},"deck":{"id":1625975,"slug":"python","title":"The Snake-Charmer Guide","description":"","width":1920,"height":1080,"visibility":"all","published_at":"2019-10-17T08:07:36.569Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/6e2b93216c370b3566725252628056d1/thumb.jpg?1571737068","view_count":2,"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"helvetica","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":58,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":null,"data_updated_at":1574168476229,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{}},"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":"dark","phone_number":null,"phone_country_code":null,"media_sources":"unsplash","export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"hi@nicco.io","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":645257,"storage_limit":262144000},"deck":{"id":1625975,"slug":"python","title":"The Snake-Charmer Guide","description":"","width":1920,"height":1080,"visibility":"all","published_at":"2019-10-17T08:07:36.569Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/6e2b93216c370b3566725252628056d1/thumb.jpg?1571737068","view_count":3,"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"helvetica","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":71,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":null,"data_updated_at":1574771246038,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{}},"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
