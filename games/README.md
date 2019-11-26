@@ -104,8 +104,11 @@ You want to play rock-paper-scissors against the computer.
 Bonus Points: Accept different spelling of each choice ('rock', 'Rock', 'rOcK') and maybe even abbreviations.
 
 ### Phone 📱
-The class phone gets initialized with 1 number.
+
+The class phone gets initialized with 1 phone number.
+
 You can call the 1 number, but only if it's valid.
+
 Write a method that validates the number: Valid if starts with a 0 otherwise not.
 
 Also, you don't want to get disturbed while eating ice cream, so you can turn on don't disturb mode.
