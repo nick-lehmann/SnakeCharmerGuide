@@ -20,7 +20,7 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="+EJOsgZBk9bMf0wwTnDJrLDsBcsadDQVjd+L2OBkgTS/0fOXaDIX2DjltySEa4zk8qDvJRicvXeSgihhamLQug==" />
+<meta name="csrf-token" content="WOMbU/ga966R0uyC2ft5NIPd3abF6KfdK2nrts0n76cfcKZ2lmlzoGVIF5YT4Dx8wZE3SMcALr80NEgPRyG+KQ==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -933,7 +933,7 @@ person['name']  # Nicco</code></pre></div></div></section><section data-backgrou
 </div></div>
 
 <div class="sl-block" data-block-type="code" style="width: 1760px; height: 786px; left: 80px; top: 72px;" data-block-id="60e41da1c66c6b9f3c86756614ff40a1"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 250%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">person = {
-    person['name'] = 'Nicco'
+    'name': 'Nicco'
 }
 
 person['name']  # Nicco
@@ -967,7 +967,38 @@ for value in person.values():
     print(value)  # Elon Musk, 48, 184, ...
 
 for key, value in person.items():
-    print(f'{key} has the value: {value}')</code></pre></div></div></section></section><section class="stack" data-id="f50cff49b3d5b5ed308cc4d76edcb2d3"><section data-background-color="#fbfff3" data-id="38e6c1e2281a6f106c6e89f5d7f7c52c"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="40c28eab1a426737d0c0cc56124513ac"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
+    print(f'{key} has the value: {value}')</code></pre></div></div></section><section data-background-color="#000000" data-id="9984082bdb160e987ee483233c89ded2"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="fdc7403f6ab253ff0bfc1a262f2a2138"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
+<h1><strong>Nesting</strong></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 1760px; height: 800px; left: 80px; top: 72px;" data-block-id="a099912422634496085accb9ead2c3cb"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 165%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">person = {
+    'name': 'Elon Musk',
+    'age': 48,
+    'height': 184,
+    'worth': '23,7 Billion',
+    'companies': {
+        'Paypal': {
+            'founded': 2000,
+            'revenue': '15.451 billion',
+            'employees': 21800
+        },
+        'SpaceX': {
+            'founded': 2002,
+            'revenue': '2 billion',
+            'employees': 7000
+        },
+        'Tesla': {
+            'founded': 2003,
+            'revenue': '21.461 billion',
+            'employees': 45000
+        }
+    }
+}
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="f39a6d05d2aed2f5553fc7f6bb8f336d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
+<p style="text-align:right">Dicts</p>
+</div></div>
+</section></section><section class="stack" data-id="f50cff49b3d5b5ed308cc4d76edcb2d3"><section data-background-color="#fbfff3" data-id="38e6c1e2281a6f106c6e89f5d7f7c52c"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="40c28eab1a426737d0c0cc56124513ac"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
 <h1><strong>Classes</strong></h1>
 </div></div>
 
@@ -1268,29 +1299,6 @@ print(truck)
 </div></div>
 <div class="sl-block" data-block-type="text" data-block-id="1ecbc1a0ba42348607bb6ed1623c8dcb" style="height: auto; min-width: 30px; min-height: 30px; width: 1169px; left: 376px; top: 792px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="0">
 <p><a href="https://docs.python.org/3/reference/datamodel.html" target="_blank">docs.python.org/3/reference/datamodel.html</a></p>
-</div></div></section><section data-background-color="#000000" data-id="fbe3fa35fba3e2af3ceb22f9c20a8855"><div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 911px; height: auto;" data-block-id="75445f2b5c649b3137e5f67d36bce44e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(255, 255, 255); text-align: left;">
-<h1><strong>Overview</strong></h1>
-</div></div>
-
-<div class="sl-block" data-block-type="code" style="width: 1760px; height: 792px; left: 80px; top: 72px;" data-block-id="7789f3d637301b86ea0e43ce71209d09"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 235%;" data-code-wrap="true"><pre class="python"><code data-line-numbers="" style="padding: 30px;">class Car:
-    wheels = 4
-    top_speed = 100
-
-    def __init__(self, color):
-        self.color = color
-
-    def drive(self):
-        print(f'Brumm Brumm in {self.color}')
-
-
-car_one = Car('Red')
-car_one.drive()
-
-car_two = Car('White')
-car_two.drive()
-</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 960px; top: 872px;" data-block-id="5800d6773e4aeb059c5a9061f37d1702"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%; color: rgb(238, 238, 238);">
-<p style="text-align:right">Classes</p>
 </div></div></section></section><section data-background-color="#fbfff3" data-id="519edadcd97b9272ef074895572b6ce8"><div class="sl-block" data-block-type="text" style="width: 1612px; left: 154px; top: 78px; height: auto;" data-block-id="ba2b50be92586baf9ba1eea299ecd190"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 150%; color: rgb(0, 0, 0);">
 <h1><strong>Modules &amp; Imports</strong></h1>
 </div></div>
@@ -1301,7 +1309,7 @@ car_two.drive()
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":"dark","phone_number":null,"phone_country_code":null,"media_sources":"unsplash","export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"hi@nicco.io","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":645257,"storage_limit":262144000},"deck":{"id":1625975,"slug":"python","title":"The Snake-Charmer Guide","description":"","width":1920,"height":1080,"visibility":"all","published_at":"2019-10-17T08:07:36.569Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/6e2b93216c370b3566725252628056d1/thumb.jpg?1571737068","view_count":3,"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"helvetica","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":71,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":null,"data_updated_at":1574771246038,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{}},"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":"dark","phone_number":null,"phone_country_code":null,"media_sources":"unsplash","export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"hi@nicco.io","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":645257,"storage_limit":262144000},"deck":{"id":1625975,"slug":"python","title":"The Snake-Charmer Guide","description":"","width":1920,"height":1080,"visibility":"all","published_at":"2019-10-17T08:07:36.569Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/6e2b93216c370b3566725252628056d1/thumb.jpg?1571737068","view_count":3,"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"helvetica","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":71,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":null,"data_updated_at":1574774755064,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{}},"user":{"id":1156529,"username":"cupcakearmy","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7739999537e5e5e6f78e267fc1765e26?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":4049850,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
