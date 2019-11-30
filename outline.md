@@ -57,8 +57,18 @@ Outline
 
 ## Session 4 (19.11.2019)
 
-Learning goals
+Outline
 - Learn basics of lists (Game: `The new friend`)
 - Exercise `How far` without bonus
 - Refactor with functions for bonus task
 - Start with normal exercises
+
+
+## Session 5 (26.11.2019)
+
+Outline
+- Show advantages of dictionaries using the 'how far' game
+- Explain dictionaries using slides
+- Game: 'the oldest'
+- Explain classes using the slides
+- Game: 'phone'
