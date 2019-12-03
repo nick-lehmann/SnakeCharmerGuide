@@ -32,6 +32,7 @@ Exercises
 
 
 ## Classes
+- **Phone**: Implement a very basic phone.
 
 
 ## Exceptions
