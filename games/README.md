@@ -92,7 +92,7 @@ She has 4 Liters of gas left
 Bonus Points: Will the drivers make it if they drive slowly (+10% efficiency)?
 
 
-### 🙍🏼‍️🙍🏼‍️🙍🏼‍ The oldest
+### 🙍🏼‍️🙍🏼‍️🙍🏼‍ The oldest [Dictionaries]
 
 You have some students and know how old they are. Mike is 19, Peter is 20, Michelle is 22 and Nicole is 20.
 
@@ -113,14 +113,3 @@ You want to play rock-paper-scissors against the computer.
 4. Evaluate each round and print who has won.
 
 Bonus Points: Accept different spelling of each choice ('rock', 'Rock', 'rOcK') and maybe even abbreviations.
-
-### Phone 📱
-
-The class phone gets initialized with 1 phone number.
-
-You can call the 1 number, but only if it's valid.
-
-Write a method that validates the number: Valid if starts with a 0 otherwise not.
-
-Also, you don't want to get disturbed while eating ice cream, so you can turn on don't disturb mode.
-The method "ring" only rings your phone if do not disturb is off. You should be able to turn not disturb mode on and off
