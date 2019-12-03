@@ -71,4 +71,12 @@ Outline
 - Explain dictionaries using slides
 - Game: 'the oldest'
 - Explain classes using the slides
-- Game: 'phone'
+
+
+## Session 6 (03.12.2019)
+
+- Quick warmup on classes using the slides
+- Quick implementation of a basic Point class
+- Phone exercise
+- Enhance point class using operator overloading / dunder methods
+- Maybe quick introduction to exceptions
