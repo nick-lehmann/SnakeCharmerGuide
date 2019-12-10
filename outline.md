@@ -80,3 +80,10 @@ Outline
 - Phone exercise
 - Enhance point class using operator overloading / dunder methods
 - Maybe quick introduction to exceptions
+
+
+## Session 7 (10.12.2019)
+
+- Finish up classes with just games
+- Game: Human
+- Game: Point
