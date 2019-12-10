@@ -9,6 +9,7 @@
 
 Bonus: Inheritance! If your are really fast and feel comfortable with object-oriented programming in Python, have a look
     at this [short introduction to inheritance](https://github.com/nick-lehmann/SnakeCharmerGuide/blob/master/docs/code/class_inheritance.py).
+    Talk to a tutor to clarify the concept before starting the task.
     Try to implement a subclass of Human that represents a Student. Add an attribute that represents his or her student
     id and change the method for saying hi to also print the student id at the end.
 """
