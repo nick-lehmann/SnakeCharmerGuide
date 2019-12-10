@@ -19,10 +19,20 @@ class Salmon(Fish):
     """
 
     def __init__(self, size):
-        self.species = 'Salmon'
-        self.size = float(size)
+        super().__init__('Salmon', size)
+        self.expensive = True
+
+    def what_am_i(self):
+        """
+        Optionally you can add functionality to existing methods
+        """
+        super().what_am_i()
+        print('Plus something else')
 
     def swim_backwards(self):
+        """
+        Or simply add new methods
+        """
         print(f'I am a Salmon, I can even swim backwards! 🐠')
 
 
@@ -34,3 +44,4 @@ not_nemo = Salmon(3)
 not_nemo.swim()
 not_nemo.swim_backwards()
 not_nemo.what_am_i()
+print(f'Expensive: {not_nemo.expensive}')
