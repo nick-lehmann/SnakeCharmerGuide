@@ -87,3 +87,15 @@ Outline
 - Finish up classes with just games
 - Game: Human
 - Game: Point
+
+## Session 8 (17.12.2019)
+
+## Session 9 (07.01.2020)
+
+## Session 10 (14.01.2020)
+
+## Session 11 (21.01.2020)
+
+## Session 12 (28.01.2020)
+
+## Session 13 (04.02.2020)
