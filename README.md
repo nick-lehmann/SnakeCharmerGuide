@@ -11,6 +11,10 @@ In this repo you will find all material related to the Python beginner course he
 ### [📄 Outline](https://github.com/nick-lehmann/SnakeCharmerGuide/tree/master/outline.md)
 
 
+## Contact
+
+- [Nicco](mailto:hi@nicco.io)
+
 ## 🚀 Project ideas
 
 By the end of this course, every
