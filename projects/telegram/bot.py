@@ -8,7 +8,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext
 
 
-TOKEN = ''
+TOKEN = '1038866477:AAH_8EKNwuozaKXdCe9fWRlSin7mJ7x2j34'
 
 
 def get_mensa_names() -> List[str]:
