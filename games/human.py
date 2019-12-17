@@ -22,7 +22,7 @@ class Human:
         self.hobbies = hobbies
 
     def say_hi(self):
-        print(f'Hi, I am {self.name} and {self.age} years old! 👋🏻')
+        print(f'Hi, I am {self.name} and {self.age} years old! 👋')
         for hobby in self.hobbies:
             print(f'  - {hobby}')
 
@@ -57,4 +57,4 @@ class Student(Human):
 
 student = Student('Peter', '4242', 21, ['Swimming', 'Hiking'])
 student.say_hi()
-
+student.birthday()

@@ -148,3 +148,42 @@ INFO: Raising a number to a power is done using the `**` operator, e.g. 2 ** 3 =
       root, raise the number to 1/2 for now.
 
 BONUS: Together with the tutors. Overload appropriate operators to make your life easier.
+
+
+### 🧮 Math adventure
+
+You're going to implement a few basic math methods yourself! Hurray 🥳
+
+The goal is simple: Print a list as bullet points (each item has a dash "-" in front) and then both the
+sum and the maximum of the list. The function for outputting a list as bullet points should be in its own
+module and the `sum()` and `max()` function should be in their own module as well.
+
+Tasks:
+1) Add three files/modules: one for the output function, one for the math functions and one where you write your code that uses
+the other two modules (e.g. `main.py`).
+2) Think of a list of integers. What is its maximum element and its sum?
+3) Write the output function that prints a list as bullet points.
+4) Write the `max()` function that finds the maximum of the given list.
+5) Write the `sum()` function that finds the sum of the given list.
+
+
+### 🎲 Guess my number
+
+You are going to implement the "Guess my number" play. When the game starts, the computer chooses a random number
+from a given range (e.g. one to six, but any other will do). Then, the user has three rounds to guess the number.
+After entering his or her guess, the user gets a message if the guess was too low or too high. If the guess was correct,
+the game is over and he/she has won. Otherwise, the next rounds starts. If the user did not guess the number after three
+rounds, he/she has lost.
+
+NOTE: Use the [random](https://docs.python.org/3/library/random.html) package from the standard library.
+BONUS: Let the user choose the range of numbers the secret number can be chosen from.
+
+
+### 🔐 Password Generator
+
+Implement your own secure password generator. Ask the user how long the password should be and print the generated
+password. For security reasons, every character should have the same probability to end up in the password.
+
+NOTE: Use the [string](https://docs.python.org/3/library/string.html) module to get a list of possible characters
+and the [random](https://docs.python.org/3/library/random.html) module to generate the password.
+NOTE: Take a look at the [`join()` method](https://docs.python.org/3/library/stdtypes.html#str.join)

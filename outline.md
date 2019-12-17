@@ -88,9 +88,16 @@ Outline
 - Game: Human
 - Game: Point
 
+
 ## Session 8 (17.12.2019)
 
+- `Math adventure` game
+- `Guess my number` game
+- Bonus for fast participants: `Password generator` game
+
+
 ## Session 9 (07.01.2020)
+
 
 ## Session 10 (14.01.2020)
 
