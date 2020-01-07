@@ -1,8 +1,8 @@
 # Scraping
 
-## Dependencies
+### Dependencies
 
-### requests_html
+#### requests_html
 
 Library for easy html parsing
 
@@ -15,7 +15,7 @@ Library for easy html parsing
 pip install requests-html
 ```
 
-### Flask
+#### Flask
 
 A small web server
 
