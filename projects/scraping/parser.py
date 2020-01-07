@@ -13,6 +13,21 @@ def parse_local():
         print(name, age)
 
 
+def parse_spotify_charts():
+    document = get(
+        'https://spotifycharts.com/regional/global/weekly/latest').content
+    html = HTML(html=document)
+
+    table = html.find('.chart-table tbody', first=True)
+    songs = table.find('tr')
+
+    for song in songs[:10]:
+        print(
+            song.find('.chart-table-position', first=True).text,
+            song.find('.chart-table-track', first=True).text,
+        )
+
+
 def parse_alternativlos():
     document = get('https://alternativlos.org/').content
     html = HTML(html=document)
@@ -27,18 +42,3 @@ def parse_tu_dresden():
 
     titles = html.find('.owl-carousel', first=True).find('.teaser-bottom')
     print([title.text for title in titles])
-
-
-def parse_spotify_charts():
-    document = get(
-        'https://spotifycharts.com/regional/global/weekly/latest').content
-    html = HTML(html=document)
-
-    table = html.find('.chart-table tbody', first=True)
-    songs = table.find('tr')
-
-    for song in songs[:10]:
-        print(
-            song.find('.chart-table-position', first=True).text,
-            song.find('.chart-table-track', first=True).text,
-        )
