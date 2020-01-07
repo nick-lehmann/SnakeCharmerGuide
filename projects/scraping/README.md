@@ -1,16 +1,31 @@
 # Scraping
 
-## Dependencies
+### Dependencies
 
-### requests_html
+#### requests_html
+
+Library for easy html parsing
 
 - [docs](https://requests-html.kennethreitz.org/)
 - [pip](https://pypi.org/project/requests-html/)
 
-#### Installation
+###### Installation
 
 ```sh
 pip install requests-html
+```
+
+#### Flask
+
+A small web server
+
+- [docs](https://flask.palletsprojects.com/en/1.1.x/)
+- [pip](https://pypi.org/project/flask/)
+
+###### Installation
+
+```sh
+pip install flask
 ```
 
 ## Sites & Examples
