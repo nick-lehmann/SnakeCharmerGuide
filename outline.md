@@ -98,8 +98,16 @@ Outline
 
 ## Session 9 (07.01.2020)
 
+- Introduction to pip, install first package
+- Flask server
+  - Write "hello world" route together
+  - Implement second endpoint with user data individually
+- Continue individually with scraping projects
+
 
 ## Session 10 (14.01.2020)
+
+- Start scraping the canteen website of the TU Dresden
 
 ## Session 11 (21.01.2020)
 
