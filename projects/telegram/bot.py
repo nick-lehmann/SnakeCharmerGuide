@@ -1,8 +1,11 @@
 from requests import get
 from requests_html import HTML
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 URL = 'https://www.studentenwerk-dresden.de/mensen/speiseplan/?view=list'
-TOKEN = '713760546:AAFCvsHVC-HiFZ2wQAaFbHwwHFbvyPQIf-E'
+TOKEN = 'my_telegram_token'
+
+updater = Updater(TOKEN, use_context=True)
 
 
 def get_all_canteens():
@@ -34,8 +37,22 @@ def get_all_canteens():
     return all_canteens
 
 
-canteens = get_all_canteens()
-dishes_for_mensa_johanstadt = canteens['Mensa Johannstadt in Dresden']
+def dishes_hanlder(update, context):
+    canteens = get_all_canteens()
+    dishes_for_alte_mensa = canteens['Alte Mensa in Dresden']
 
-for dish in dishes_for_mensa_johanstadt:
-    print(f"🍕  {dish['name']} 💰  {dish['price']}")
+    for dish in dishes_for_alte_mensa:
+        price = dish['price']
+
+        if price == 'ausverkauft':
+            continue
+
+        student_price = price.split('/')
+        student_price = student_price[0].strip()
+        update.message.reply_text(f"🍕  {dish['name']}\n💰  {student_price}")
+
+
+updater.dispatcher.add_handler(CommandHandler('dishes', dishes_hanlder))
+
+updater.start_polling()
+updater.idle()

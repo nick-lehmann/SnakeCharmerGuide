@@ -15,7 +15,7 @@ from requests_html import HTML
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler
 
-TOKEN = '1040558164:AAE0H70j95LLshqJeAT97W9NEKo4fNmwctE'
+TOKEN = '1097500800:AAHtnKhqPQUqmXA11-H2iRzTTQimQYW4PFY'
 URL = 'https://www.studentenwerk-dresden.de/mensen/speiseplan/?view=list'
 
 
@@ -74,7 +74,8 @@ def list_canteens(update, context):
         for name in names
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    update.message.reply_text('🤔 Choose a canteen ⬇', reply_markup=reply_markup)
+    update.message.reply_text('🤔 Choose a canteen ⬇',
+                              reply_markup=reply_markup)
 
 
 def dishes_for_canteen(update, context):

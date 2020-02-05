@@ -1,9 +1,9 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from time import time
 
+TOKEN = '1097500800:AAHtnKhqPQUqmXA11-H2iRzTTQimQYW4PFY'
 
-updater = Updater(
-    '1020549379:AAFbFYdKuZa4vLWUrhF7N8VySUV5Hj3gonE', use_context=True)
+updater = Updater(TOKEN, use_context=True)
 
 
 def censorship(update, context):
