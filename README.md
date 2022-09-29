@@ -2,9 +2,9 @@
 
 # 🐍 Snake Charmer Guide
 
-In this repo you will find all material related to the Python beginner course held at the TU Dresden in the winter term 2019/20.
+In this repo you will find all material related to the Python beginner course held at the TU Dresden.
 
-### [📣 Feedback](https://bit.ly/2GZ3ApT)
+<!-- ### [📣 Feedback](https://bit.ly/2GZ3ApT) -->
 
 ### [📺 Presentation](https://nick-lehmann.github.io/SnakeCharmerGuide)
 
@@ -12,10 +12,9 @@ In this repo you will find all material related to the Python beginner course he
 
 ### [📄 Outline](https://github.com/nick-lehmann/SnakeCharmerGuide/tree/master/outline.md)
 
-
 ## Contact
 
-- [Nicco](mailto:hi@nicco.io)
+- [Nicco](mailto:python@nicco.io)
 
 ## 🚀 Project ideas
 
@@ -26,7 +25,6 @@ By the end of this course, every
 - 🤖 Telegram Bot
 
 If you have an idea for a project that you would like to see realised and explained, we are open for suggestions.
-
 
 ## 💪🏻 Exercises
 
