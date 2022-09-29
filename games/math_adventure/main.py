@@ -13,7 +13,8 @@ the other two modules (e.g. `main.py`).
 4) Write the `max()` function that finds the maximum of the given list.
 5) Write the `sum()` function that finds the sum of the given list.
 """
-from abacus import sum, max
+
+from abacus import max, sum
 from output import print_list
 
 l = [3, 2, 5, 4, 8, 3, 1]

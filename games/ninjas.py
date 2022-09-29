@@ -1,12 +1,14 @@
-# The wall has been breached and cobras are attacking the castle 🏰
-# We see that there are 50 cobras approaching 🐍
-# Fortunately we have special ninjas that can defeat the cobras 🥷
-# Every ninja can defeat 3 cobras.
-# Can we defeat all the cobras with the ninjas we have?
+"""
+The wall has been breached and cobras are attacking the castle 🏰
+We see that there are 50 cobras approaching 🐍
+Fortunately we have special ninjas that can defeat the cobras 🥷
+Every ninja can defeat 3 cobras.
+Can we defeat all the cobras with the ninjas we have?
 
-# 1. Define a variable "ninjas" and one "cobras" and print if we win or loose based on the variables
+1. Define a variable "ninjas" and one "cobras" and print if we win or loose based on the variables
 
-# Bonus Points: Say how many more ninjas do we need to win the fight!
+Bonus Points: Say how many more ninjas do we need to win the fight!
+"""
 
 cobras = 50
 ninjas = 20
