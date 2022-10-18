@@ -1,4 +1,4 @@
-![Logo](./docs/logo.png)
+![Logo](./logo.png)
 
 # 🐍 Snake Charmer Guide
 
