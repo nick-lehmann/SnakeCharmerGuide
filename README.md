@@ -6,7 +6,7 @@ In this repo you will find all material related to the Python beginner course he
 
 <!-- ### [📣 Feedback](https://bit.ly/2GZ3ApT) -->
 
-### [📺 Presentation](https://nick-lehmann.github.io/SnakeCharmerGuide)
+### [📺 Presentation](https://slides.com/cupcakearmy/python)
 
 ### [🕹 Games](https://github.com/nick-lehmann/SnakeCharmerGuide/tree/master/games)
 
@@ -15,16 +15,6 @@ In this repo you will find all material related to the Python beginner course he
 ## Contact
 
 - [Nicco](mailto:python@nicco.io)
-
-## 🚀 Project ideas
-
-By the end of this course, every
-
-- 📄 PDF Merger & Downloader Utility
-- 📹 Youtube Downloader
-- 🤖 Telegram Bot
-
-If you have an idea for a project that you would like to see realised and explained, we are open for suggestions.
 
 ## 💪🏻 Exercises
 
