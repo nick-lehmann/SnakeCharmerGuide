@@ -1,3 +1,0 @@
-requests==2.*
-requests_html==0.10.0
-python-telegram-bot==12.*
