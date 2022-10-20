@@ -33,10 +33,10 @@ Learning goals:
 
 Outline:
 - Ask about language of course
-- Talk about form (results, questions we have about answers, wishes for topics)
 - Quick introduction of tutors
-- Ask who has no python installation
+- Talk about form (results, questions we have about answers, wishes for topics)
 - Tell people about the format of the lessons
+- Ask who has no python installation
 - Slides about variables & if/else + "Ninja" Game
 - Slides about loops + "Pizza" Game
 - Slides about functions + "How far" Game
