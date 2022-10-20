@@ -72,21 +72,21 @@ Bonus Points: Do all the prints inside the loop.
 
 ### ⛽️ How far can we make it? [Functions]
 
-Renee is driving when she realises that her tank is almost empty.
+Renee is driving when she realizes that her tank is almost empty.
 She knows her car burns a certain amount of liters of gas every 100km.
 She also knows the distance to the next gas station.
 Will she make it or will she be stranded?
 
 Renee drives a Jaguar F-TYPE R that consumes 10,9 l/100km.
-The next gas station is in 420km.
+The next gas station is 420km away.
 She has 40 Liters of gas left
 
 Arnold drives a Fiat 500 that consumes 4,9 l/100km.
-The next gas station is in 285km.
+The next gas station is 285km away.
 He has 15 Liters of gas left
 
 Annabelle drives a Renault Espace that consumes 5,8 l/100km.
-The next gas station is in 69km.
+The next gas station is 69km away.
 She has 4 Liters of gas left
 
 Bonus Points: Will the drivers make it if they drive slowly (+10% efficiency)?
