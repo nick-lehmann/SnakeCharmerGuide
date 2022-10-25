@@ -14,16 +14,23 @@
   - Random
   - File access
 - Exceptions
+- Modules (Structure e.g. __init__, pip(env))
+
+Bonus + Nice to have:
 - Generator, Iterators (`itertools`)
 - Decorator, First-class functions
-- Modules (Structure e.g. __init__, pip(env))
 - Async/await
 - Multiprocessing
-
-Bonus:
-- Implement a project (spotify evaluator, telegram bot to scrape mensa meals, 2048)
 - Idiomatic python (documentation, annotation, unittesting)
 - Debugging strategies (e.g. debugger)
+- Implement a project (see following ideas)
+
+Project ideas:
+- spotify evaluator
+- telegram bot to scrape mensa meals
+- [wordle](https://www.nytimes.com/games/wordle/index.html) solver
+- 2048 terminal game (hard on windows)
+
 
 ## Session 1 (20.10.2022)
 
@@ -40,4 +47,22 @@ Outline:
 - Slides about variables & if/else + "Ninja" Game
 - Slides about loops + "Pizza" Game
 - Slides about functions + "How far" Game
-- Fizzbuzz+ (if time)
+
+## Session 2 (27.10.2022)
+
+Learning goals:
+- Datastructures
+  - list/tuples
+  - sets 
+  - dict
+  - iteration techniques
+  - nested datastructures
+- Have a look at the python documentation
+
+Outline:
+- Fizzbuzz as warmup
+- Slides about lists + look at python docs
+- Fishes games
+- Sets + Bonus in fishes game
+- Slides about dict
+- Sum helper methods (max, min, sum)
