@@ -184,3 +184,41 @@ password. For security reasons, every character should have the same probability
 NOTE: Use the [string](https://docs.python.org/3/library/string.html) module to get a list of possible characters
 and the [random](https://docs.python.org/3/library/random.html) module to generate the password.
 NOTE: Take a look at the [`join()` method](https://docs.python.org/3/library/stdtypes.html#str.join)
+
+### 🐟 Lanternfish
+
+> This is game is from [Advent of Code 2021 Day 6](https://adventofcode.com/2021/day/6)
+
+We are diving in the ocean when we notice a swarm of Lanterfishes. After observing a while you notice that every 7 days a Lanterfish reproduces and creates a new Lanterfish. The Lanternfish needs 2 days before it can start creating children.
+
+We can assume that every Lanterfish has an internal clock that counts down 1 each day.
+
+**Rules**
+
+- When the counter reaches 0, it resets to 6 and creates a new Lanternfish with an internal counter of 8
+- Otherwise just count down by 1
+
+Now we want to track a swarm of Lanternfishes. To do so we have a list if fishes with it's internal clocks.
+
+**Example**
+
+Starting with 5 Lanternfishes with an internal clock of 3, 4, 3, 1 and 2.
+After 10 days the swarm counts 12 fishes.
+
+```
+Initial state: 3,4,3,1,2
+After  1 day:  2,3,2,0,1
+After  2 days: 1,2,1,6,0,8
+After  3 days: 0,1,0,5,6,7,8
+After  4 days: 6,0,6,4,5,6,7,8,8
+After  5 days: 5,6,5,3,4,5,6,7,7,8
+After  6 days: 4,5,4,2,3,4,5,6,6,7
+After  7 days: 3,4,3,1,2,3,4,5,5,6
+After  8 days: 2,3,2,0,1,2,3,4,4,5
+After  9 days: 1,2,1,6,0,1,2,3,3,4,8
+After 10 days: 0,1,0,5,6,0,1,2,2,3,7,8
+```
+
+How big is the swarm after 80 days?
+
+Bonus: How big is the swarm after 256 days? (Your solution should not take more than a second)
