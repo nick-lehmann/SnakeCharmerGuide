@@ -185,25 +185,41 @@ NOTE: Use the [string](https://docs.python.org/3/library/string.html) module to 
 and the [random](https://docs.python.org/3/library/random.html) module to generate the password.
 NOTE: Take a look at the [`join()` method](https://docs.python.org/3/library/stdtypes.html#str.join)
 
+
+### Fizzbuzz
+
+fizzbuzz is a math game for children to teach them about division. Write a function that plays the fizzbuzz game. It takes an argument that is the upper limit for the game.
+
+fizzbuzz is played like this:
+- You start at 1
+- With each turn, you count up by one.
+- If the number is divisible by 3, print "Fizz"
+- If the number is divisible by 5, print "Buzz"
+- If the number is divisible by 3 and 5, print "Fizzbuzz"
+- If none of the three conditions is true, just print the number
+
+Example: n = 20
+=> 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz
+
 ### 🐟 Lanternfish
 
 > This is game is from [Advent of Code 2021 Day 6](https://adventofcode.com/2021/day/6)
 
-We are diving in the ocean when we notice a swarm of Lanterfishes. After observing a while you notice that every 7 days a Lanterfish reproduces and creates a new Lanterfish. The Lanternfish needs 2 days before it can start creating children.
+We are diving in the ocean when we notice a swarm of Lanterfishes. After observing a while you notice that every 7 days a Lanternfish reproduces and creates a new Lanterfish. The Lanternfish needs 2 days before it can start creating children.
 
-We can assume that every Lanterfish has an internal clock that counts down 1 each day.
+We can assume that every Lanternfish has an internal clock that counts down 1 each day.
 
 **Rules**
 
 - When the counter reaches 0, it resets to 6 and creates a new Lanternfish with an internal counter of 8
-- Otherwise just count down by 1
+- Otherwise, just count down by 1
 
-Now we want to track a swarm of Lanternfishes. To do so we have a list if fishes with it's internal clocks.
+Now we want to track a swarm of Lanternfishes. To do so we have a list of fish with their internal clocks.
 
 **Example**
 
 Starting with 5 Lanternfishes with an internal clock of 3, 4, 3, 1 and 2.
-After 10 days the swarm counts 12 fishes.
+After 10 days the swarm counts 12 fish.
 
 ```
 Initial state: 3,4,3,1,2
