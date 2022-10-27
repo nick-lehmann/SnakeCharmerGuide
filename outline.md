@@ -62,7 +62,7 @@ Learning goals:
 Outline:
 - Fizzbuzz as warmup
 - Slides about lists + look at python docs
-- [Fishes](games/fishes.py) game
+- [Fishes](games/lanternfish.py) game
 - Sets + Bonus in fishes game
 - Slides about dict
 - [Student](games/students.py) game

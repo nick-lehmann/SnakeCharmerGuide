@@ -237,4 +237,10 @@ After 10 days: 0,1,0,5,6,0,1,2,2,3,7,8
 
 How big is the swarm after 80 days?
 
+There are a few more things we would like to check here:
+
+- Does it make a difference if you reverse the fish at the beginning? Check it 👍🏻
+- How does the number of fish after 80 days changes, when you remove the first of the initial fish?
+- Each fish should have a unique internal clock, so remove the duplicates. How does the number change?
+
 Bonus: How big is the swarm after 256 days? (Your solution should not take more than a second)
