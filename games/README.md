@@ -185,12 +185,12 @@ NOTE: Use the [string](https://docs.python.org/3/library/string.html) module to 
 and the [random](https://docs.python.org/3/library/random.html) module to generate the password.
 NOTE: Take a look at the [`join()` method](https://docs.python.org/3/library/stdtypes.html#str.join)
 
-
 ### Fizzbuzz
 
 fizzbuzz is a math game for children to teach them about division. Write a function that plays the fizzbuzz game. It takes an argument that is the upper limit for the game.
 
 fizzbuzz is played like this:
+
 - You start at 1
 - With each turn, you count up by one.
 - If the number is divisible by 3, print "Fizz"
@@ -244,3 +244,46 @@ There are a few more things we would like to check here:
 - Each fish should have a unique internal clock, so remove the duplicates. How does the number change?
 
 Bonus: How big is the swarm after 256 days? (Your solution should not take more than a second)
+
+## Students
+
+You have a course with students, each having a "name", an "age" and a list of "grades", e.g.:
+
+```python
+# 1.0 is the best grade, 6.0 the worst
+students = [
+  {
+    'name': 'John',
+    'age': 21,
+    'grades': [1.3, 2.7, 1.0]
+  },
+  {
+    'name': 'Michelle',
+    'age': 25,
+    'grades': [1.0, 3.7, 2.3]
+  },
+  {
+    'name': 'Thomas',
+    'age': 41,
+    'grades': [2.3, 2.7, 2.0]
+  }
+]
+```
+
+(It is best to put the information in a variable, don't use `input()` here)
+
+And now you want to gather some information about your course. It is enough to print the information to the console after each other.
+
+**Part 1**
+
+1. For your teaching, you need a list of names.
+2. Your memory got quite bad as you have grown older. Is there a 'Thomas' in your course?
+3. Since your students vary in age, you want to know the average age of your class.
+4. Some students perform better, some worse. You would like to know the average grade of each student. Save that as a new key in the dictionary, e.g. `average`.
+5. Damn! The other class is better than yours. To make you look like a better teacher, you decide to remove the worst grade for each student. Do so and print recalculate the averages again.
+6. Now, you notice that some students are still not doing well. You want to print the names of all students (like in task 4) with an average grade bigger than 2.0.
+
+**Part 2**
+
+1. Sort the names of the students alphabetically.
+2. Print the student names sorted by their average grade.

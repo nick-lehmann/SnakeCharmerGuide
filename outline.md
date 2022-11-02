@@ -14,9 +14,10 @@
   - Random
   - File access
 - Exceptions
-- Modules (Structure e.g. __init__, pip(env))
+- Modules (Structure e.g. **init**, pip(env))
 
 Bonus + Nice to have:
+
 - Generator, Iterators (`itertools`)
 - Decorator, First-class functions
 - Async/await
@@ -26,19 +27,21 @@ Bonus + Nice to have:
 - Implement a project (see following ideas)
 
 Project ideas:
+
 - spotify evaluator
 - telegram bot to scrape mensa meals
 - [wordle](https://www.nytimes.com/games/wordle/index.html) solver
 - 2048 terminal game (hard on windows)
 
-
 ## Session 1 (20.10.2022)
 
 Learning goals:
-- Make sure everyone can run a python script 
+
+- Make sure everyone can run a python script
 - Everyone is familiar with python basics (variables, if/else, loops, functions)
 
 Outline:
+
 - Ask about language of course
 - Quick introduction of tutors
 - Talk about form (results, questions we have about answers, wishes for topics)
@@ -51,15 +54,17 @@ Outline:
 ## Session 2 (27.10.2022)
 
 Learning goals:
+
 - Datastructures
   - list/tuples
-  - sets 
+  - sets
   - dict
   - iteration techniques
   - nested datastructures
 - Have a look at the python documentation
 
 Outline:
+
 - Fizzbuzz as warmup
 - Slides about lists + look at python docs
 - [Fishes](games/lanternfish.py) game
@@ -67,3 +72,22 @@ Outline:
 - Slides about dict
 - [Student](games/students.py) game
 - Sum helper methods (max, min, sum)
+
+## Session 3 (02.11.2022)
+
+Learning goals:
+
+- Dicts
+- Iterating dicts
+- Nested data structures
+
+Outline:
+
+- Slides about dict
+- [Student](games/students.py) game
+- Sum helper methods (max, min, sum)
+- [Built in functions](https://docs.python.org/3/library/functions.html#built-in-functions)
+
+- Map, Reduce, Filter
+- Use naive first, then comprehension
+- List & Dict comprehension
