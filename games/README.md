@@ -279,3 +279,38 @@ And now you want to gather some information about your course. It is enough to p
 
 1. Sort the names of the students alphabetically.
 2. Print the student names sorted by their average grade.
+
+## Exercise Session 3
+
+**Part 1: Map, Filter**
+
+```python
+numbers = ['1', '-5', '3', '0', '-2', '-69', '420', 0]
+```
+
+- Do not use while or for loops.
+- Convert the list to int, filter any number that is not 7 and then sum it up. Solution: `29`.
+- Now use the absolute value of the numbers. Solution: `5`.
+
+Use the [built in functions](https://docs.python.org/3/library/functions.html) like `filter`, `map`, `int`, `abs` and `sum`.
+
+**Part 2: Sort**
+
+```python
+drinks = [
+    {"name": "Kolle-Mate", "caffeine": 20, "price": 2.37},
+    {"name": "Biozisch Mate", "caffeine": 20, "price": 2.97},
+    {"name": "Muntermate", "caffeine": 20, "price": 7.65},
+    {"name": "Club Mate", "caffeine": 20, "price": 1.58},
+    {"name": "Flora Mate", "caffeine": 18, "price": 1.95},
+    {"name": "1337", "caffeine": 29, "price": 1},
+    {"name": "Maya Mate", "caffeine": 21.5, "price": 1.95},
+    {"name": "Mio Mate", "caffeine": 20, "price": 1.18},
+]
+```
+
+Use the [built in function](https://docs.python.org/3/library/functions.html) `sorted`.
+
+- For each Mate define a new key `power` that determines how much caffeine/price there is.
+- Sort the list by the one with the most caffeine.
+- Print the Mate with the most power, and the one with the lowest.

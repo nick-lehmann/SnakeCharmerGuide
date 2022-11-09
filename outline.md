@@ -73,7 +73,7 @@ Outline:
 - [Student](games/students.py) game
 - Sum helper methods (max, min, sum)
 
-## Session 3 (02.11.2022)
+## Session 3 (03.11.2022)
 
 Learning goals:
 
@@ -91,3 +91,22 @@ Outline:
 - Map, Reduce, Filter
 - Use naive first, then comprehension
 - List & Dict comprehension
+
+## Session 4 (10.11.2022)
+
+Learning goals:
+
+- Map, Reduce, Filter
+- Comprehensions
+- Lambda
+
+Outline:
+
+- List exercise with map, filter, int, abs, sum
+  - Show the basics
+  - Refactor with list comprehension
+  - Mention that it also works for dicts, example exponent
+- Sorted
+  - Show how it works with list, then with dict
+  - Mate
+- Lambda
