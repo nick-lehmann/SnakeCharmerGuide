@@ -289,8 +289,8 @@ numbers = ['1', '-5', '3', '0', '-2', '-4', '7', '0', '3', '-1', '2', '8']
 ```
 
 - Do not use while or for loops.
-- Convert the list to int, filter any number that is not 7 and then sum it up. Solution: `29`.
-- Now use the absolute value of the numbers. Solution: `5`.
+- Convert the list to int, filter any number that is not 7 and then sum it up. Solution: `5`.
+- Now use the absolute value of the numbers. Solution: `29`.
 
 Use the [built in functions](https://docs.python.org/3/library/functions.html) like `filter`, `map`, `int`, `abs` and `sum`.
 
