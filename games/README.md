@@ -280,12 +280,12 @@ And now you want to gather some information about your course. It is enough to p
 1. Sort the names of the students alphabetically.
 2. Print the student names sorted by their average grade.
 
-## Exercise Session 3
+## Exercise Session 4
 
 **Part 1: Map, Filter**
 
 ```python
-numbers = ['1', '-5', '3', '0', '-2', '-69', '420', 0]
+numbers = ['1', '-5', '3', '0', '-2', '-4', '7', '0', '3', '-1', '2', '8']
 ```
 
 - Do not use while or for loops.
