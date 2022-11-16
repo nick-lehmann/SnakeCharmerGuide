@@ -135,7 +135,9 @@ Bonus: Inheritance! If you are fast and feel comfortable with object-oriented pr
 5. Given p1 = Point(1,2), p2 = Point(2,4) and p3 = Point(5,1). Add all points to p. Calculate the distance of p to p4 = Point(10,10) and (0,0). (Results should be `3.6` and `10.6` respectively)
 
 INFO: Do not forget to add the `self` parameter to every method.
+
 INFO: Everything should be implemented in the class. No standalone functions are needed (or allowed ;) ).
+
 INFO: Raising a number to a power is done using the `**` operator, e.g. 2 \*\* 3 == 8. If you want to calculate the square root, raise the number to 1/2 for now.
 
 BONUS: Together with the tutors. Overload appropriate operators to make your life easier.
