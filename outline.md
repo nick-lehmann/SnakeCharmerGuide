@@ -110,3 +110,30 @@ Outline:
   - Show how it works with list, then with dict
   - Mate
 - Lambda
+
+
+## Session 5 (17.11.2022)
+
+Learning goals:
+
+- Basics of classes and OOP
+
+Outline:
+
+- Show reference solution for Mate game (5min)
+- Motivational example why you need it (how far game) (10min)
+- Slides about classes (10min)
+- Human exercise (30min)
+- Point exercise (30min)
+
+
+## Session 6 (24.11.2022)
+
+Learning goals:
+
+- Dunder methods 
+- Inheritance
+ 
+Outline:
+
+- Extend point class with arithmetic dunder methods and string formatting
