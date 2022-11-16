@@ -126,7 +126,7 @@ Bonus Points: Accept different spelling of each choice ('rock', 'Rock', 'rOcK') 
 
 Bonus: Inheritance! If you are fast and feel comfortable with object-oriented programming in Python, try to implement a subclass of `Human` that represents a student. Add an attribute that represents his or her student id and change the method for saying hi to also print the student id at the end.
 
-### 📌 Point
+### 📌 Point [Classes]
 
 1. Create a Point class that has two attributes, x and y. Remember the constructor.
 2. Implement an add method that takes another point, adds this one to itself and returns a new Point that is the result of the addition.
