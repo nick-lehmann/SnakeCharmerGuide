@@ -1,20 +1,3 @@
-"""
-1) Implement a class Human class with just the attributes `name` and `age`. Do not forget the constructor.
-2) Add a method for saying hi. It should print out the name and the age.
-3) Add a method for having birthday that increases the age of the current human by one.
-4) Add a list of hobbies to your Human class (remember the constructor) and include the hobbies in the say_hi method.
-5) Add a method has_hobby to find out, if the given hobby is one of the humans hobbies. Return a True or False.
-6) Add a method to add a humans hobby. If the human already has the hobby, print an appropriate message and do not add
-   it. Otherwise, add it.
-
-Bonus: Inheritance! If your are really fast and feel comfortable with object-oriented programming in Python, have a look
-    at this [short introduction to inheritance](https://github.com/nick-lehmann/SnakeCharmerGuide/blob/master/docs/code/class_inheritance.py).
-    Talk to a tutor to clarify the concept before starting the task.
-    Try to implement a subclass of Human that represents a Student. Add an attribute that represents his or her student
-    id and change the method for saying hi to also print the student id at the end.
-"""
-
-
 class Human:
     def __init__(self, name, age, hobbies):
         self.name = name
@@ -45,16 +28,12 @@ class Human:
         self.hobbies.append(hobby)
 
 
-class Student(Human):
-    def __init__(self, name, student_id, age, hobbies):
-        super().__init__(name, age, hobbies)
-        self.student_id = student_id
+alma = Human('alma', 20, ['code', 'bake'])
+alma.say_hi()
+alma.birthday()
 
-    def say_hi(self):
-        super().say_hi()
-        print(f'Student id: {self.student_id}')
+print(alma.has_hobby('code'))
 
+alma.add_hobby('boulder')
 
-student = Student('Peter', '4242', 21, ['Swimming', 'Hiking'])
-student.say_hi()
-student.birthday()
+alma.say_hi()

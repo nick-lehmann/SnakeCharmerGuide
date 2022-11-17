@@ -124,7 +124,12 @@ Bonus Points: Accept different spelling of each choice ('rock', 'Rock', 'rOcK') 
 5. Add a method has_hobby to find out, if the given hobby is one of the humans' hobbies. Return a boolean (`True` or `False`).
 6. Add a method to add a human's hobby. If the human already has the hobby, print an appropriate message and do not add it. Otherwise, add it.
 
-Bonus: Inheritance! If you are fast and feel comfortable with object-oriented programming in Python, try to implement a subclass of `Human` that represents a student. Add an attribute that represents his or her student id and change the method for saying hi to also print the student id at the end.
+### 👨‍👩‍👦‍👦 Human Reloaded [Classes, Inheritance]
+
+Take the class `Human` from the Human game to start with
+
+1. Extend
+   Bonus: Inheritance! If you are fast and feel comfortable with object-oriented programming in Python, try to implement a subclass of `Human` that represents a student. Add an attribute that represents his or her student id and change the method for saying hi to also print the student id at the end.
 
 ### 📌 Point [Classes]
 
@@ -138,9 +143,7 @@ INFO: Do not forget to add the `self` parameter to every method.
 
 INFO: Everything should be implemented in the class. No standalone functions are needed (or allowed ;) ).
 
-INFO: Raising a number to a power is done using the `**` operator, e.g. 2 \*\* 3 == 8. If you want to calculate the square root, raise the number to 1/2 for now.
-
-BONUS: Together with the tutors. Overload appropriate operators to make your life easier.
+INFO: Raising a number to a power is done using the `**` operator, e.g. `2 ** 3 == 8`. If you want to calculate the square root, raise the number to `1/2` for now.
 
 ### 🧮 Math adventure
 
