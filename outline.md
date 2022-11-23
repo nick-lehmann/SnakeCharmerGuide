@@ -111,7 +111,6 @@ Outline:
   - Mate
 - Lambda
 
-
 ## Session 5 (17.11.2022)
 
 Learning goals:
@@ -126,14 +125,19 @@ Outline:
 - Human exercise (30min)
 - Point exercise (30min)
 
-
 ## Session 6 (24.11.2022)
 
 Learning goals:
 
-- Dunder methods 
+- Dunder methods
 - Inheritance
- 
+
 Outline:
 
-- Extend point class with arithmetic dunder methods and string formatting
+- Show solution to simple Point + give time to finish (10 min)
+- Slides dunder (5min)
+- Extend point class with arithmetic dunder methods and string formatting (30min)
+- Str, Len, eq
+- Add / Sub
+- Inheritance slides (5 min)
+- Human reloaded (30min)
