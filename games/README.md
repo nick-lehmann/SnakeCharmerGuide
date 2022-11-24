@@ -145,6 +145,18 @@ INFO: Everything should be implemented in the class. No standalone functions are
 
 INFO: Raising a number to a power is done using the `**` operator, e.g. `2 ** 3 == 8`. If you want to calculate the square root, raise the number to `1/2` for now.
 
+### 📌 Point2 [Classes]
+
+Implement `dunder` methods on the `Point` class to make it more convenient to work with.
+
+1. Add a string representation.
+2. Make the addition of two points easier. (Check the `sum` builtin with multiple points)
+3. Let's assume we have to find the distance between two points very often. Implement subtraction between two points to return the distance between them.
+4. It's also very common to find the distance of a point related to the origin. Use the `float` function to do that.
+5. Let's compare points. The smaller point is the one closer to the origin. Implement the corresponding dunder method. (check the `min` function with multiple points)
+
+Info: You find documentation for the `dunder` methods here: https://docs.python.org/3/reference/datamodel.html#basic-customization.
+
 ### 🧮 Math adventure
 
 You're going to implement a few basic math methods yourself! Hurray 🥳
