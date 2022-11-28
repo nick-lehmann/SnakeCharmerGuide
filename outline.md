@@ -141,3 +141,19 @@ Outline:
 - Add / Sub
 - Inheritance slides (5 min)
 - Human reloaded (30min)
+
+## Session 7 (01.12.2022)
+
+Learning goals:
+
+- Inheritance
+
+Outline:
+
+- Remember naming conventions by example in editor (5min)
+- Show slides about inheritance (10min)
+- Show inheritance and `isinstance` in the editor (10min)
+- Classroom game
+  - Base classes (20min)
+  - 4 & 5 (20min)
+  - Bonus (20min)

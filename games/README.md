@@ -124,12 +124,39 @@ Bonus Points: Accept different spelling of each choice ('rock', 'Rock', 'rOcK') 
 5. Add a method has_hobby to find out, if the given hobby is one of the humans' hobbies. Return a boolean (`True` or `False`).
 6. Add a method to add a human's hobby. If the human already has the hobby, print an appropriate message and do not add it. Otherwise, add it.
 
-### 👨‍👩‍👦‍👦 Human Reloaded [Classes, Inheritance]
+### 👨‍👩‍👦‍👦 Classroom [Classes, Inheritance]
 
-Take the class `Human` from the Human game to start with
+1. Create (or copy from the `human.py`) a `Human` class.
 
-1. Extend
-   Bonus: Inheritance! If you are fast and feel comfortable with object-oriented programming in Python, try to implement a subclass of `Human` that represents a student. Add an attribute that represents his or her student id and change the method for saying hi to also print the student id at the end.
+- Add a `name` and `age` properties.
+- Add a `__str__` which returns the name and age.
+- Add a `birthday` method which increases the age by 1.
+
+2. Create a class `Student` that inherits from `Human`
+
+- Add a property `school`, which should represent the school the student is enrolled at.
+- Extend the `__str__` method to also print that this Human is a student that is studying at `school`.
+- Add a `take_notes` method.
+
+3. Create a class `Teacher` that also inherits `Human`.
+
+- Add the properties `school` and `subject`.
+- Extend the `__str__` method to also print what the teacher is teaching at what school.
+- Add `teach` method.
+
+4. Create a list `classroom` with 2 students and 1 teacher.
+
+- Write a method that checks if the classroom is complete (At least 2 students and 1 teacher).
+- Print wether the classroom is complete or not.
+
+5. It's time to hold a lesson!
+
+- Create a method `hold_class` that takes our `classroom` and for each Human either `takes_notes` or `teaches`
+
+_BONUS:_
+
+- Instead of 4 & 5, write a class `ClassRoom` that checks if the classroom is valid on initialization.
+- Add a `hold_class` method that does the same thing as in 5.
 
 ### 📌 Point [Classes]
 
