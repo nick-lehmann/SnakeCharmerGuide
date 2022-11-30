@@ -1,37 +1,44 @@
+# 1
 class Human:
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
     def __str__(self):
+        return self.greet()
+
+    def greet(self):
         return f'Hi, I am {self.name} and {self.age} years old! 👋'
 
     def birthday(self):
         self.age += 1
         print(f'{self.name} is now {self.age} years old 🎂')
 
-
+# 2
 class Student(Human):
     def __init__(self, name, age, school):
         super().__init__(name, age)
         self.school = school
 
-    def __str__(self):
-        human = super().__str__()
+    # Overrides the greet method from the Human class.
+    def greet(self):
+        human = super().greet()
         return f'{human} I am a student at {self.school}!'
 
     def take_notes(self):
         print(f'{self.name} is taking notes 📝')
 
 
+# 3
 class Teacher(Human):
     def __init__(self, name, age, school, subject):
         super().__init__(name, age)
         self.school = school
         self.subject = subject
 
-    def __str__(self):
-        human = super().__str__()
+    # Overrides the greet method from the Human class.
+    def greet(self):
+        human = super().greet()
         return f'{human} I teach {self.subject} at {self.school}.'
 
     def teach(self):
@@ -65,24 +72,27 @@ def hold_class(classroom):
 
 # BONUS
 class ClassRoom:
-    def __init__(self, humans):
+    def __init__(self):
         self.students = []
         self.teacher = None
-
-        for human in humans:
-            if isinstance(human, Teacher):
-                self.teacher = human
-            elif isinstance(human, Student):
-                self.students.append(human)
-            else:
-                raise ValueError('Only Teacher and Student objects are allowed')
-
-        if self.teacher is None:
-            raise ValueError('ClassRoom must have a teacher')
-        if len(self.students) < 2:
-            raise ValueError('ClassRoom must have at least 2 students')
+        
+    def add_human(self, human):
+        if isinstance(human, Teacher):
+            self.teacher = human
+        elif isinstance(human, Student):
+            self.students.append(human)
+        else:
+            print('ALARM!!!!')
 
     def hold_class(self):
+        if self.teacher is None:
+            print('No teacher, no class!')
+            return
+
+        if len(self.students) < 2:
+            print('Not enough students, definitely not worth!')
+            return
+
         self.teacher.teach()
         for student in self.students:
             student.take_notes()
@@ -104,7 +114,10 @@ print(nicco)
 
 # 4 & 5
 classroom = [bob, carla, nicco]
-print('We can start!' if is_classroom_complete(classroom) else 'Something is wrong...')
+if is_classroom_complete(classroom):
+    print('We can start!')
+else: 
+    print('Something is wrong...')
 hold_class(classroom)
 
 # BONUS
