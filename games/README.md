@@ -145,7 +145,7 @@ Bonus: Check what happens if you print your `Student` object as a string.
 
 - Add the properties `school` and `subject`.
 - Extend the `greet` method to **also** print what the teacher is teaching at what school.
-- Add a `teach` method that prints all information about the teacher.
+- Add a `teach` method that... _teaches_.
 
 4. Create a list `classroom` with 2 students and 1 teacher.
 
