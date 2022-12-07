@@ -232,6 +232,7 @@ while True: # Each iteration is one round.
 BONUS:
 - Let the user choose the range of numbers the secret number can be chosen from.
 - Print the total time of the game. Look for a fitting module in the [standard library](https://docs.python.org/3/library/).
+- Validate that the user has not entered a number twice.
 
 Hint regarding the standard library:
 - Use the [random](https://docs.python.org/3/library/random.html) package from the standard library.
