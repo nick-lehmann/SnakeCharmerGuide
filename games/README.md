@@ -206,14 +206,36 @@ Tasks:
 
 ### 🎲 Guess my number
 
-You are going to implement the "Guess my number" play. When the game starts, the computer chooses a random number
-from a given range (e.g. one to six, but any other will do). Then, the user has three rounds to guess the number.
-After entering his or her guess, the user gets a message if the guess was too low or too high. If the guess was correct,
-the game is over and he/she has won. Otherwise, the next rounds starts. If the user did not guess the number after three
-rounds, he/she has lost.
+You are going to implement the "Guess my number" game. When the game starts, the computer chooses a random number
+from a range you specify (e.g. one to six, but any other will do). 
 
-NOTE: Use the [random](https://docs.python.org/3/library/random.html) package from the standard library.
-BONUS: Let the user choose the range of numbers the secret number can be chosen from.
+Each round follows these steps:
+- Get the user input
+- Validate the input using a function that checks:
+  - the input is in the allowed range. If not, it's not a problem, the user can try again. No next round!
+  - the input is a valid number. If not, tell them they are dumb and abort the game.
+- Compare the guess to the secret number
+  - The user guesses the correct number. In this case, the game ends.
+  - The user guessed the wrong number. Tell them if their guess is too high or too low. Next round!
+
+In the end, congratulate the user and tell them how many rounds were played.
+
+Tip: A good structure for this game might look like this.
+```python
+while True: # Each iteration is one round.
+  # Get user guess
+  # Validate guess (possibility 1 + 2, use a function and exception)
+  # Check number
+  # Go again or abort
+```
+
+BONUS:
+- Let the user choose the range of numbers the secret number can be chosen from.
+- Print the total time of the game. Look for a fitting module in the [standard library](https://docs.python.org/3/library/).
+
+Hint regarding the standard library:
+- Use the [random](https://docs.python.org/3/library/random.html) package from the standard library.
+- Use the [time](https://docs.python.org/3/library/time.html) package for measuring the time. [datetime](https://docs.python.org/3/library/datetime.html) is also possible, but slightly more complex.
 
 ### 🔐 Password Generator
 

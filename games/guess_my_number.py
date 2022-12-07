@@ -1,22 +1,24 @@
-"""
-You are going to implement the "Guess my number" play. When the game starts, the computer chooses a random number
-from a given range (e.g. one to six, but any other will do). Then, the user has three rounds to guess the number.
-After entering his or her guess, the user gets a message if the guess was too low or too high. If the guess was correct,
-the game is over and he/she has won. Otherwise, the next rounds starts. If the user did not guess the number after three
-rounds, he/she has lost.
-
-NOTE: Use the [random](https://docs.python.org/3/library/random.html) package from the standard library.
-BONUS: Let the user choose the range of numbers the secret number can be chosen from.
-"""
 import random
+import time
+
+MIN, MAX = 1, 6
+secret_number = random.randint(MIN, MAX)
 
 
-secret_number = random.randint(1, 6)
+class InvalidGuess(Exception):
+    pass
 
+def validate_guess(guess):
+    """ Checks if the users understands the rules. """
+    number = int(guess)
+
+    if number < MIN or number > MAX:
+        raise InvalidGuess('Your guess is out of range.')
 
 def play_round():
     """ Play one round of guess my number """
     user_input = int(input('What is your guess?: '))
+    validate_guess(user_input)
 
     if user_input == secret_number:
         print('Your correct!')
@@ -32,10 +34,28 @@ def play_round():
 
 
 print('Guess my number!')
-for round in range(1, 4):
-    is_correct = play_round()
-    if is_correct:
+rounds = 1
+found = False
+start = time.time()
+for _ in range(4):
+    try:
+        is_correct = play_round()
+        if is_correct:
+            found = True
+            break
+        rounds += 1
+    except ValueError as e:
+        print('You are too dumb for this game, it says NUMBER!')
         break
+    except InvalidGuess as e:
+        print('INVALID: ', e)
+        print('Please try again. 🙏')
+        continue
 
-if not is_correct:
-    print('Sorry but nope 🤷🏻‍♂️')
+if found:
+    print(f'Congratulations, you won in {rounds} rounds!')
+else:
+    print(f'¯\_(ツ)_/¯')
+
+end = time.time()
+print(f'All of this took {end - start} seconds.')
