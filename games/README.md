@@ -207,9 +207,10 @@ Tasks:
 ### 🎲 Guess my number
 
 You are going to implement the "Guess my number" game. When the game starts, the computer chooses a random number
-from a range you specify (e.g. one to six, but any other will do). 
+from a range you specify (e.g. one to six, but any other will do).
 
 Each round follows these steps:
+
 - Get the user input
 - Validate the input using a function that checks:
   - the input is in the allowed range. If not, it's not a problem, the user can try again. No next round!
@@ -221,6 +222,7 @@ Each round follows these steps:
 In the end, congratulate the user and tell them how many rounds were played.
 
 Tip: A good structure for this game might look like this.
+
 ```python
 while True: # Each iteration is one round.
   # Get user guess
@@ -230,13 +232,24 @@ while True: # Each iteration is one round.
 ```
 
 BONUS:
+
 - Let the user choose the range of numbers the secret number can be chosen from.
 - Print the total time of the game. Look for a fitting module in the [standard library](https://docs.python.org/3/library/).
 - Validate that the user has not entered a number twice.
 
 Hint regarding the standard library:
+
 - Use the [random](https://docs.python.org/3/library/random.html) package from the standard library.
 - Use the [time](https://docs.python.org/3/library/time.html) package for measuring the time. [datetime](https://docs.python.org/3/library/datetime.html) is also possible, but slightly more complex.
+
+### 🚗 Drive
+
+You want to check for an age before driving. To do so we will implement a function `drive` that raises different exceptions we then need to handle.
+
+1. Create a function `drive` that accepts a parameter `age`. It should print something like "Brum brum".
+2. Create an input to ask the user how old they are and pass it to the `drive` function.
+3. Inside of `drive`, try to convert `age` to an integer (number). If not, ask again for the age.
+4. Inside of `drive`, only allow people between 15 and 80 to drive. Otherwise raise a new custom `AgeError` exception (you need to define/create it). The program should then say that they are not allowed to drive and exit.
 
 ### 🔐 Password Generator
 

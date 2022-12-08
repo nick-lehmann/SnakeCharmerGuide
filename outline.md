@@ -14,6 +14,7 @@
   - Random
   - File access
 - Exceptions
+- Enum
 - Modules (Structure e.g. **init**, pip(env))
 
 Bonus + Nice to have:
@@ -157,3 +158,18 @@ Outline:
   - Base classes (20min)
   - 4 & 5 (20min)
   - Bonus (20min)
+
+## Session 8 (08.12.2022)
+
+Learning goals:
+
+- Exceptions
+- First imports
+
+Outline:
+
+- Solution to the classroom exercise (no bonus) (5min)
+- Slides exceptions (10min)
+- Basic except exercise (15min)
+- Slides import (10min)
+- Dice game (45min)
