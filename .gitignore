@@ -2,6 +2,8 @@
 .vscode
 
 venv
+__pycache__
+demo.py
 
 *.mp4
 *.mp3

@@ -173,3 +173,16 @@ Outline:
 - Basic except exercise (15min)
 - Slides import (10min)
 - Dice game (45min)
+
+## Session 9 (15.12.2022)
+
+Learning goals:
+
+- Modules
+
+Outline:
+
+- Finish up the dice game & show solution (10min)
+- Slides about imports plus show how imports are composed on the filesystem (10min)
+- Show how imports are done. (10min)
+- Math adventures (45min)

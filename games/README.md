@@ -191,18 +191,24 @@ Info: You find documentation for the `dunder` methods here: https://docs.python.
 
 You're going to implement a few basic math methods yourself! Hurray 🥳
 
-The goal is simple: Print a list as bullet points (each item has a dash "-" in front) and then both the
+The goal is: Print a list as bullet points (each item has a dash "-" in front) and then both the
 sum and the maximum of the list. The function for outputting a list as bullet points should be in its own
-module and the `sum()` and `max()` function should be in their own module as well.
+module and the `sum()`, `max()` and `average()` function should be in their own module as well. Don't use built it methods.
+
+> Tip: A module is a python file.
 
 Tasks:
 
-1. Add three files/modules: one for the output function, one for the math functions and one where you write your code that uses
+1. Add three python files/modules: one for the output function, one for the math functions and one where you write your code that uses
    the other two modules (e.g. `main.py`).
-2. Think of a list of integers. What is its maximum element and its sum?
+2. Think of a list of integers. What is its maximum element, the sum and the average?
 3. Write the output function that prints a list as bullet points.
 4. Write the `max()` function that finds the maximum of the given list.
 5. Write the `sum()` function that finds the sum of the given list.
+6. Write the `average()` function that find the average of the list.
+7. Create a `main.py` file where you import your functions and print it to the console.
+
+BONUS: Write a function that calculates the [median](https://en.wikipedia.org/wiki/Median) of the list.
 
 ### 🎲 Guess my number
 
