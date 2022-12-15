@@ -408,9 +408,9 @@ Use the [built in function](https://docs.python.org/3/library/functions.html) `s
 
 ## Budgeting
 
-You're going to write a more complex program that needs some structure. Your task is to find out to discover how people eat. To do so, you have to do two things:
+You're going to write a more complex program that needs some structure. Your task is to discover how people eat. To do so, you have to do two things:
 
-1) Read the `people.json` file that lists the meals and drinks of everyone.
+1) Read the `people.json` file that lists the meals and drinks bought by the people.
 2) Read the `food.json` that tells you how much the items cost and how many calories they contain.
 
 You have to combine the information from both files to find out how much money everyone has spent and how many calories they got in return. 
