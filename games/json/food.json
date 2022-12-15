@@ -1,0 +1,11 @@
+{
+  "Bier": { "price": 1.2, "kcal": "250" },
+  "Salat": { "price": 1.5, "kcal": "200" },
+  "Kartoffelbrei": { "price": 1.8, "kcal": "300" },
+  "Tee": { "price": 0.9, "kcal": "30" },
+  "Quinoa": { "price": 1.9, "kcal": "250" },
+  "Schnitzel": { "price": 3.5, "kcal": "500" },
+  "Mate": { "price": 2.0, "kcal": "180" },
+  "Smoothie": { "price": 3.0, "kcal": "90" },
+  "Nudeln": { "price": 1.8, "kcal": "600" }
+}

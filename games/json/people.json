@@ -1,0 +1,8 @@
+[
+  { "name": "Lisa", "eats": ["Salat", "Kartoffelbrei", "Tee"] },
+  { "name": "Max", "eats": ["Quinoa", "Bier", "Kartoffelbrei"] },
+  { "name": "Alex", "eats": ["Nudeln", "Mate"] },
+  { "name": "Sophie", "eats": ["Schnitzel", "Salat", "Smoothie"] },
+  { "name": "Mona", "eats": ["Bier", "Salat", "Bier"] },
+  { "name": "Achmed", "eats": ["Kartoffelbrei", "Quinoa", "Bier"] }
+]
