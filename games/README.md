@@ -403,3 +403,26 @@ Use the [built in function](https://docs.python.org/3/library/functions.html) `s
 - For each Mate define a new key `power` that determines how much caffeine/price there is.
 - Sort the list by the one with the most caffeine.
 - Print the Mate with the most power, and the one with the lowest.
+
+
+
+## Budgeting
+
+You're going to write a more complex program that needs some structure. Your task is to find out to discover how people eat. To do so, you have to do two things:
+
+1) Read the `people.json` file that lists the meals and drinks of everyone.
+2) Read the `food.json` that tells you how much the items cost and how many calories they contain.
+
+You have to combine the information from both files to find out how much money everyone has spent and how many calories they got in return. 
+
+Then you have to calculate some interesting things:
+- who spent the most money
+- who was the most hungry
+- who was the most efficient (money per calorie)
+
+Create a separate function for each 🧐. Then, wire up everything together. Get the data from the file, give it to your functions and print out the results.
+
+We propose that you create three files:
+- "input" logic (reading the file, combining them into some data structure)
+- calculating the statistics
+- the `main` function that runs your program and imports from the others
