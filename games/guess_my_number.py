@@ -14,21 +14,20 @@ def validate_guess(guess):
 
     if number < MIN or number > MAX:
         raise InvalidGuess('Your guess is out of range.')
+    
+    return number
 
-def play_round():
+def play_round(guess):
     """ Play one round of guess my number """
-    user_input = int(input('What is your guess?: '))
-    validate_guess(user_input)
-
-    if user_input == secret_number:
+    if guess == secret_number:
         print('Your correct!')
         return True
 
-    if user_input < secret_number:
+    if guess < secret_number:
         print('Too low 🔻')
         return False
 
-    if user_input > secret_number:
+    if guess > secret_number:
         print('Too high 💨')
         return False
 
@@ -37,9 +36,12 @@ print('Guess my number!')
 rounds = 1
 found = False
 start = time.time()
-for _ in range(4):
+
+while True:
     try:
-        is_correct = play_round()
+        guess = input('What is your guess?: ')
+        guess = validate_guess(guess)
+        is_correct = play_round(guess)
         if is_correct:
             found = True
             break
