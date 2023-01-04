@@ -430,7 +430,7 @@ We propose that you create three files:
 
 ## Canteens
 
-Time to get real 😅 We will use the OpenMensa API of the TU Dresden 🚀
+Time to get real 😅 We will use the OpenMensa API of the TU Dresden 🚀 It provides all important data about the canteens at the TU Dresden campus, their opening hours and the meals.
 
 Your program should do the following:
 - Show all canteens with their respective id and name
