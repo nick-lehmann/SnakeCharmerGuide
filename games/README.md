@@ -426,3 +426,69 @@ We propose that you create three files:
 - "input" logic (reading the file, combining them into some data structure)
 - calculating the statistics
 - the `main` function that runs your program and imports from the others
+
+
+## Canteens
+
+Time to get real 😅 We will use the OpenMensa API of the TU Dresden 🚀
+
+Your program should do the following:
+- Show all canteens with their respective id and name
+- Ask the user for the id of the canteen they want to see
+- Show the menu of the selected canteen and the menu for today
+
+The output might look like this:
+
+```
+> python mensa.py
+4: Alte Mensa
+6: Mensa Matrix
+8: Mensologie
+9: Mensa Siedepunkt
+10: Mensa TellerRandt
+11: Mensa Palucca Hochschule
+13: Mensa Stimm-Gabel
+24: Mensa Kraatschn
+25: Mensa Mahlwerk
+28: MiO - Mensa im Osten
+29: Mensa U-Boot
+30: Mensa Sport
+32: Mensa Johannstadt
+33: Mensa WUeins
+34: Mensa Brühl
+35: Zeltschlösschen
+36: Grill Cube
+
+Select a canteen: 6
+Gebackenes Seelachsfilet in Sesampanade (A, A1, D, K), dazu Kartoffelpüree (G) und Gurkensalat: 3.38€
+"GA HUONG CAM" Hähnchenbruststreifen mit Gemüse (A, A1, F) und Basmati Reis: 3.52€
+Gnocchipfanne mit Broccoli, Zucchini, Tomaten und Karotten (A, A1), dazu eine Tomatensoße mit Basilikum (F, A, A4): 2.35€
+Veganer Wok aus frischem Gemüse (A, A1, F) und Basmati Reis: 2.89€
+Gelber Erbseneintopf mit gebratenen Wienerscheiben: 2.16€
+Bunte Salatvariation aus Lollo, Eisberg, Radicchio, Tomate, Paprika, Gurke, Mais und Radieschen, dazu gebackene Gemüsekroketten A, A1, I): 2.99€
+Bunte Salatvariation aus Lollo, Eisberg, Radicchio, Tomate, Paprika, Gurke, Mais und Radieschen, dazu gebratenes Putenschnitzel ( A, A1): 2.99€
+Gebackenes Seelachsfilet in Sesampanade (A, A1, D, K), dazu Kartoffelpüree (G) und buntes Gemüse: 3.38€
+Pasta (A,A1) mit Gulaschsoße und Reibekäse (G): 2.76€
+Zwei Jumbo Fischstäbchen (A,A1,C,D,J ), dazu Kartoffelpüree (G) und buntes Gemüse: 3.38€
+```
+
+Links:
+- [requests package](https://pypi.org/project/requests/)
+- [OpenMensa API Definition](https://docs.openmensa.org/api/v2/overview/)
+- [TU Dresden endpoint](https://www.studentenwerk-dresden.de/mensen/speiseplan-api.html)
+
+A good guideline for this task is:
+
+- Install the requests package. Scream if you need help.
+- Get the necessary endpoint from the TU Dresden page.
+- Request the list of all canteens and print the JSON data of the response. Check the format of the data.
+- Nicely print the canteens.
+- Ask the user for the id of the canteen they want to see.
+- Request the menu for the selected canteen. Look at the OpenMensa API definition on how to do this. (Tip: It is enough to hardcode the day for now)
+- Print the menu to the console and have a look at the data.
+- Nicely print the menu.
+
+In case you are bored:
+- Check if the selected mensa id is valid.
+- Ask the user for the day too.
+- Use the `datetime` package to get the current day.
