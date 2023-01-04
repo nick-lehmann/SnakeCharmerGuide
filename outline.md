@@ -186,3 +186,19 @@ Outline:
 - Slides about imports plus show how imports are composed on the filesystem (10min)
 - Show how imports are done. (10min)
 - Math adventures (45min)
+
+
+## Session 10 (05.01.2023)
+
+Learning goals:
+
+- Modules from PyPi
+- Basic networking with requests
+- Basic understanding of APIs
+
+Outline:
+
+- Show PyPi & check pip with everyone (5min)
+- Explore OpenMensa API (15min)
+- Menu game (60min)
+- If time: Introduction to async
