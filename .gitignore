@@ -4,6 +4,7 @@
 venv
 __pycache__
 demo.py
+.env
 
 *.mp4
 *.mp3
