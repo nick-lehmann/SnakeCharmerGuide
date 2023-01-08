@@ -1,11 +1,8 @@
-from bot import client, get_env_or_exit
-import abacus
-import hello
+import add
+import config
+import image
 import joined
-import report
-import text
+import language
+from bot import bot
 
-
-token = get_env_or_exit('DISCORD_TOKEN')
-print("token", token)
-client.run(token)
+bot.run(config.TOKEN)

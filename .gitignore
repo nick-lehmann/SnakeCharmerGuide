@@ -8,3 +8,6 @@ demo.py
 
 *.mp4
 *.mp3
+
+pyproject.toml
+poetry.lock
