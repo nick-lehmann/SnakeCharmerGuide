@@ -8,12 +8,13 @@ def list_canteens():
     canteens = r.json()
     canteens.sort(key=lambda canteen: canteen["id"])
 
-    return canteens.json()
+    return canteens
 
 def get_menu(canteen: int, date: str):
     return requests.get(f"{endpoint}/canteens/{canteen}/days/{date}/meals").json()
 
 
+# Main
 for canteen in list_canteens():
     print(f"{canteen['id']}: {canteen['name']}")
 
