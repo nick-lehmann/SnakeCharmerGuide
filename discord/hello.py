@@ -1,8 +1,11 @@
-from discord import Interaction
-from bot import client
+from discord import ApplicationContext
+from bot import bot
 
-@client.tree.command()
-async def hello(interaction: Interaction):
+@bot.slash_command()
+async def hello(interaction: ApplicationContext):
     """Says hello!"""
-    await interaction.response.send_message(f'Hi, {interaction.user.mention}')
+    user = interaction.user
+    if user is None:
+        return
+    await interaction.response.send_message(f'Hi, {user.mention}')
 

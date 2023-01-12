@@ -4,11 +4,11 @@ import aiohttp
 import config
 from bot import bot
 
-import discord
+from discord import ApplicationContext, File
 
 
 @bot.slash_command(guild_ids=[config.GUILD])
-async def image(ctx: discord.ApplicationContext, query: str):
+async def image(ctx: ApplicationContext, query: str):
     async with aiohttp.ClientSession() as session:
         # Get image URL
         async with session.get(f'https://pexels.cupcakearmy.workers.dev/{query}') as resp:
@@ -20,4 +20,4 @@ async def image(ctx: discord.ApplicationContext, query: str):
             print(resp.status)
             data = io.BytesIO(await resp.read())
         # Reply
-        await ctx.respond(file=discord.File(data, filename=f'{query}.jpg'))
+        await ctx.respond(file=File(data, filename=f'{query}.jpg'))
