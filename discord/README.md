@@ -85,7 +85,7 @@ The goal here is add a so called "Slash Command" `/add` to your bot, in order to
 
 | Difficoulty | External Modules |
 | ----------- | ---------------- |
-| 2           | `aiohttp`        |
+| 3           | `aiohttp`        |
 
 The goal is to have a bot which send a picture of a random search query you specify. So if you send `/image car` it would post a random picture of a car to the server.
 
@@ -93,8 +93,20 @@ For this we have provided you with a simple service at `https://pexels.cupcakear
 
 ### Joined
 
-Coming soon.
+| Difficoulty | External Modules |
+| ----------- | ---------------- |
+| 2           | None             |
+
+We want to have a command that shows when a user joined the server. This should be possible in 2 ways.
+
+1. With a slash command `/joined` -> shows your own join date.
+2. With a slash command `/joined <username>` -> shows the join date of `<username>`.
+3. Right click on a username -> in the context menu -> apps -> show join date.
 
 ### Language Detection
 
-Coming soon.
+| Difficoulty | External Modules          |
+| ----------- | ------------------------- |
+| 2           | `pycountry`, `langdetect` |
+
+When you right click on a message, the bot will detect the language and return a message saying what language the message is written in. For this use the modules listed above to detect and the find the language name.
