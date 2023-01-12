@@ -1,8 +1,6 @@
 import discord
 import pycountry
 from langdetect import detect
-
-import config
 from bot import bot
 
 
