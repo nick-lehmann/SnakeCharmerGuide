@@ -11,3 +11,6 @@ demo.py
 
 pyproject.toml
 poetry.lock
+
+node_modules
+.dev.vars
