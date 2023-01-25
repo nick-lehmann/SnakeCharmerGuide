@@ -18,7 +18,13 @@ export default {
     }).then((r) => r.json<PexelsQuery>())
 
     if (!photos.length) return NotFound()
-    const random = photos[Math.floor(Math.random() * photos.length)]
-    return new Response(random.src.large2x)
+
+    const urls = []
+    while (urls.length < Math.min(5, photos.length)) {
+      const random = photos[Math.floor(Math.random() * photos.length)].src.large2x
+      if (random in urls) continue
+      urls.push(random)
+    }
+    return new Response(urls.join('\n'))
   },
 }
