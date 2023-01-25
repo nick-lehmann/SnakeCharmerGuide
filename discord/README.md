@@ -85,7 +85,7 @@ The goal here is add a so called "Slash Command" `/add` to your bot, in order to
 
 | Difficoulty | External Modules |
 | ----------- | ---------------- |
-| 3           | `aiohttp`        |
+| 3           | `requests`or `aiohttp` |
 
 The goal is to have a bot which send a picture of a random search query you specify. So if you send `/image car` it would post a random picture of a car to the server.
 
@@ -110,3 +110,13 @@ We want to have a command that shows when a user joined the server. This should 
 | 2           | `pycountry`, `langdetect` |
 
 When you right click on a message, the bot will detect the language and return a message saying what language the message is written in. For this use the modules listed above to detect and the find the language name.
+
+
+
+### Canteens
+
+| Difficoulty | External Modules          |
+| ----------- | ------------------------- |
+| 3           | `requests`or `aiohttp` |
+
+You could reuse your solution from the `canteens` game to improve your bot! Add a command that shows the list of all canteens at the TU Dresden and then let the user choose one. After the user has chosen a canteen, return the menu for the current day, including the name and student price of each dish.
