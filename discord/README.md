@@ -87,9 +87,9 @@ The goal here is add a so called "Slash Command" `/add` to your bot, in order to
 | ----------- | ---------------- |
 | 3           | `requests`or `aiohttp` |
 
-The goal is to have a bot which send a picture of a random search query you specify. So if you send `/image car` it would post a random picture of a car to the server.
+The goal is to have a bot which can send pictures of a random search query you specify. So if you send `/image car` it would post a random picture of a car in reply to your command.
 
-For this we have provided you with a simple service at `https://pexels.cupcakearmy.workers.dev/<query>` where you replace `<query>` with `car` for example. It will return a random url of the image you want. It's not perfect, if it doesn't work, try another query.
+Therefore, we have provided you with a simple service at `https://pexels.cupcakearmy.workers.dev/<query>` where you replace `<query>` with a `car` for example. It will return multiple random URLs to images that match your query. It's not perfect, if it doesn't work, try another query.
 
 ### Joined
 
