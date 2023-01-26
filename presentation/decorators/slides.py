@@ -64,15 +64,15 @@ print(ranking2)
 # ============================================
 # Slide 4: Sort by elo with "normal" functions
 # ============================================
-def get_game1_elo(name):
+def get_season1_elo(name):
     return season1[name]
 
-def get_game2_elo(name):
+def get_season2_elo(name):
     return season2[name]
 
 
-ranking1 = sorted(students, key=lambda student: season1[student.name])
-ranking2 = sorted(students, key=lambda student: season2[student.name])
+ranking1 = sorted(students, key=get_season1_elo)
+ranking2 = sorted(students, key=get_season2_elo)
 print(ranking1)
 # => [Annelies (61), Max (26), Nick (25), Johanna (21)]
 print(ranking2)
@@ -114,13 +114,42 @@ print(ranking2)
 # ============================================================================
 # Slide 6: Sort by averageness (distance to average elo) with "cool" functions
 # ============================================================================
+# from typing import Callable
+# def get_scorer(elo: dict[str, int]) -> Callable[[Student], float]:
+#     def get_averageness(student: Student) -> float:
+#         total_elo = sum(elo.values())
+#         number_of_players = len(elo)
+#         average_elo = total_elo / number_of_players
+
+#         player_elo = elo[student.name] 
+#         return abs(player_elo - average_elo)
+    
+#     return get_averageness
+
+
+# scorer_game1 = get_scorer(season1)
+# scorer_game2 = get_scorer(season2)
+
+# ranking1 = sorted(students, key=scorer_game1)
+# ranking2 = sorted(students, key=scorer_game2)
+# print(ranking1)
+# # => [Nick (25), Max (26), Annelies (61), Johanna (21)]
+# print(ranking2)
+# # => [Johanna (21), Nick (25), Max (26), Annelies (61)]
+
+
+
+# Slide 7: Sort by averageness (distance to average elo) with "cool" functions & closures
+
+# Function as First-Class Citizen
+# Higher order function
 from typing import Callable
 def get_scorer(elo: dict[str, int]) -> Callable[[Student], float]:
-    def get_averageness(student: Student) -> float:
-        total_elo = sum(elo.values())
-        number_of_players = len(elo)
-        average_elo = total_elo / number_of_players
+    total_elo = sum(elo.values())
+    number_of_players = len(elo)
+    average_elo = total_elo / number_of_players
 
+    def get_averageness(student: Student) -> float:
         player_elo = elo[student.name] 
         return abs(player_elo - average_elo)
     
@@ -136,29 +165,3 @@ print(ranking1)
 # => [Nick (25), Max (26), Annelies (61), Johanna (21)]
 print(ranking2)
 # => [Johanna (21), Nick (25), Max (26), Annelies (61)]
-
-
-
-# Slide 7: Sort by averageness (distance to average elo) with "cool" functions & closures
-# from typing import Callable
-# def get_scorer(elo: dict[str, int]) -> Callable[[Student], float]:
-#     total_elo = sum(elo.values())
-#     number_of_players = len(elo)
-#     average_elo = total_elo / number_of_players
-
-#     def get_averageness(student: Student) -> float:
-#         player_elo = elo[student.name] 
-#         return abs(player_elo - average_elo)
-    
-#     return get_averageness
-
-
-# scorer_game1 = get_scorer(elo1)
-# scorer_game2 = get_scorer(elo2)
-
-# ranking1 = sorted(students, key=scorer_game1)
-# ranking2 = sorted(students, key=scorer_game2)
-# print(ranking1)
-# # => [Nick (25), Max (26), Annelies (61), Johanna (21)]
-# print(ranking2)
-# # => [Johanna (21), Nick (25), Max (26), Annelies (61)]
