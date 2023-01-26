@@ -12,8 +12,8 @@ intents.message_content = True
 bot = commands.Bot(
     description=description,
     intents=intents,
+    command_prefix="!" # type: ignore
 )
-
 
 @bot.event
 async def on_ready():

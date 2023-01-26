@@ -1,6 +1,8 @@
 from discord import ApplicationContext
 from bot import bot
 
+from discord import Bot
+
 @bot.slash_command()
 async def hello(interaction: ApplicationContext):
     """Says hello!"""
@@ -9,3 +11,9 @@ async def hello(interaction: ApplicationContext):
         return
     await interaction.response.send_message(f'Hi, {user.mention}')
 
+
+# @bot.command(name="nick")
+@bot.command()
+async def nick_test(ctx):
+    print('Test command invoked')
+    await ctx.reply("Hello from nick")

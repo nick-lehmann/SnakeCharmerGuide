@@ -1,23 +1,45 @@
 import io
 
 import aiohttp
+import requests
 import config
 from bot import bot
 
 from discord import ApplicationContext, File
 
+URL = 'https://pexels.cupcakearmy.workers.dev/{query}'
+
+async def fetch_image(query: str) -> io.BytesIO:
+    session = aiohttp.ClientSession() 
+    search = await session.get(URL.format(query=query))
+    if search.status != 200:
+        raise ValueError("Failed to search for image")
+    
+    url = await search.text()
+    search.close()
+
+    image = await session.get(url)
+    content = io.BytesIO(await image.read())
+    image.close()
+
+    await session.close()
+    return content
+
+def fetch_image_sync(query: str) -> io.BytesIO:
+    search = requests.get(URL.format(query=query))
+    if search.status_code != 200:
+        raise ValueError("Failed to search for image")
+    url = search.text
+
+    image = requests.get(url)
+    return io.BytesIO(image.content)
 
 @bot.slash_command(guild_ids=[config.GUILD])
 async def image(ctx: ApplicationContext, query: str):
-    async with aiohttp.ClientSession() as session:
-        # Get image URL
-        async with session.get(f'https://pexels.cupcakearmy.workers.dev/{query}') as resp:
-            if resp.status != 200:
-                return await ctx.respond('Could not find an image for that')
-            url = await resp.text()
-        # Get the actual image
-        async with session.get(url) as resp:
-            print(resp.status)
-            data = io.BytesIO(await resp.read())
-        # Reply
-        await ctx.respond(file=File(data, filename=f'{query}.jpg'))
+    try:
+        # image = await fetch_image(query)
+        image = fetch_image_sync(query)
+        await ctx.respond(file=File(image, filename=f'{query}.jpg'))
+    except Exception as e:
+        print(e)
+        await ctx.respond("Soooooooory, failed to fetch you an image...")
