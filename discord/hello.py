@@ -1,8 +1,6 @@
 from discord import ApplicationContext
 from bot import bot
 
-from discord import Bot
-
 @bot.slash_command()
 async def hello(interaction: ApplicationContext):
     """Says hello!"""

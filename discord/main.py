@@ -1,14 +1,16 @@
 import asyncio
-
-import add
 import config
+from bot import bot
+
+# Different commands for our bot
+import add
+import canteens
 import hello
 import image
 import joined
 import language
 import report
 import text
-from bot import bot
 
 
 async def start():
