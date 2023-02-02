@@ -2,6 +2,7 @@ from datetime import date
 from typing import Optional
 import requests
 from bot import bot
+import discord
 from discord import ApplicationContext
 
 ENDPOINT = "https://api.studentenwerk-dresden.de/openmensa/v2"
@@ -66,19 +67,34 @@ def list_meals(canteen_id: int, day: date) -> list[Meal]:
     return [meal_from_openmensa_json(meal) for meal in meals]
 
 
+# =======
+# Discord
+# =======
+def canteens_to_options(canteens: list[Canteen]) -> list[discord.SelectOption]:
+    return [
+        discord.SelectOption(
+            label=str(canteen),
+            description=f"Show menu for {canteen.name}",
+            value=str(canteen.id)
+        )
+        for canteen in canteens
+    ]
+
+class CanteenDropdown(discord.ui.Select):
+    async def callback(self, interaction: discord.Interaction):
+        canteen_id = int(self.values[0]) # type: ignore
+        meals = list_meals(canteen_id, date.today())
+        meals = map(str, meals)
+        msg = "\n".join(meals)
+        await interaction.response.send_message(msg)
 
 # ========
 # Commands
 # ========
 @bot.slash_command()
-async def food(ctx: ApplicationContext, canteen_id: Optional[int] = None):
-    if canteen_id is None:
-        canteens = list_canteens()
-        canteen_names = map(str, canteens)
-        msg = "\n".join(canteen_names)
-        await ctx.respond(msg)
-    else:
-        meals = list_meals(canteen_id, date.today())
-        meals = map(str, meals)
-        msg = "\n".join(meals)
-        await ctx.respond(msg)
+async def nick_food(ctx: ApplicationContext):
+    canteens = list_canteens()
+    canteen_options = canteens_to_options(canteens)
+    dropdown = CanteenDropdown(options=canteen_options)
+    view = discord.ui.View(dropdown)
+    await ctx.respond(view=view)
