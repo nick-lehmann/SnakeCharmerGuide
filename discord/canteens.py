@@ -1,8 +1,6 @@
-from dataclasses import dataclass
 from datetime import date
 from typing import Any, Callable, Coroutine
 
-import config
 import requests
 from bot import bot
 
@@ -148,8 +146,6 @@ def meals_to_paginator(meals: list[Meal]) -> pages.Paginator:
 
 
 class CanteenDropdown(discord.ui.Select):
-    callback_handler: Callable[[discord.Interaction, list[Any]], Coroutine[None, None, None]]
-
     async def callback(self, interaction: discord.Interaction):
         canteen = int(self.values[0]) # type: ignore
         meals = list_meals(canteen, date.today())
@@ -169,4 +165,13 @@ async def food_solution(ctx: ApplicationContext):
 
     view = discord.ui.View(dropdown)
     await ctx.respond("Pick a canteen", view=view)
+
+
+
+
+# from typing import Optional
+
+# @bot.slash_command()
+# def food(ctx: ApplicationContext, argument: Optional[int]):
+#     pass
 

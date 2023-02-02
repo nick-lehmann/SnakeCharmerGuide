@@ -5,6 +5,7 @@ from bot import bot
 # Different commands for our bot
 import add
 import canteens
+import canteen_demo
 import hello
 import image
 import joined
