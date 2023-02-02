@@ -115,8 +115,39 @@ When you right click on a message, the bot will detect the language and return a
 
 ### Canteens
 
-| Difficoulty | External Modules          |
+| Difficoulty  | External Modules          |
 | ----------- | ------------------------- |
-| 3           | `requests`or `aiohttp` |
+| 3           | `requests` |
 
-You could reuse your solution from the `canteens` game to improve your bot! Add a command that shows the list of all canteens at the TU Dresden and then let the user choose one. After the user has chosen a canteen, return the menu for the current day, including the name and student price of each dish.
+Let's mensa again! Here, we will reuse our solution for the [canteens](../games/canteens.py) game but make the meal plan available via your discord bot.
+
+Docs:
+- [Sample Openmensa Meals](https://api.studentenwerk-dresden.de/openmensa/v2/canteens/6/days/2023-02-02/meals)
+- [Openmensa API Docs](https://docs.openmensa.org/api/v2/canteens/)
+
+##### Part 1 (Simple):
+- Add a slash command that takes an optional `int` argument (canteen id).
+- If the user does not provide the integer, the bot should return a list of all canteens alongside their associated id.
+- If the user provides the id of a canteen, return the menu for the current day as a text, alongside all relevant information (especially the price). 
+
+##### Part 2 (A little fancier):
+- Make the choice of the canteen more accessible by using a select/dropdown menu
+- Think about what the labels and values for each `SelectOption` should be 
+- Handle the sending of the daily menu in the callback of the select
+
+- [Example](https://github.com/Pycord-Development/pycord/blob/master/examples/views/dropdown.py)
+- [Docs](https://docs.pycord.dev/en/stable/api/models.html#discord.SelectMenu)
+
+##### Part 3 (Really fancy):
+- Make the menu look nice by using a paginator with embeds for each meal
+- Include all relevant information in the `Embed` (name, price, category, allergens, image)
+- Tip: For some reason, setting the image URL in the `Embed` constructor does not work. Use the `.set_image()` method instead.
+- Tip: If you set the image URL for the `Embed` and still get an error, have a look at the error message 😉
+
+- [Example Paginator](https://github.com/Pycord-Development/pycord/blob/master/examples/views/paginator.py)
+- [Docs Paginator](https://github.com/Pycord-Development/pycord/blob/master/examples/views/paginator.py)
+- [Docs Embeds](https://docs.pycord.dev/en/stable/api/data_classes.html#embed)
+
+In case you have too much time, you might try:
+- Error handling for fetching information from the API
+- Removing the original message after the user has selected a canteen
