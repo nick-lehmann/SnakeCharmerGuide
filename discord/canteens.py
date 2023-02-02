@@ -12,20 +12,57 @@ from discord.ext import pages
 
 ENDPOINT = "https://api.studentenwerk-dresden.de/openmensa/v2"
 
-@dataclass
+
+# ========
+# Canteens
+# ========
 class Canteen:
     id: int
     name: str
 
-    @staticmethod
-    def from_openmensa(canteen: dict[str, Any]) -> 'Canteen':
-        return Canteen(
-            id=canteen["id"],
-            name=canteen["name"]
-        )
+    def __init__(self, id: int, name: str):
+        self.id = id
+        self.name = name
     
     def __str__(self) -> str:
         return f"{self.name}"
+
+
+def canteen_from_openmensa_json(canteen: dict[str, Any]) -> Canteen:
+    return Canteen(
+        id=canteen["id"],
+        name=canteen["name"]
+    )
+
+def list_canteens() -> list[Canteen]:
+    r = requests.get(f"{ENDPOINT}/canteens")
+
+    canteens = [canteen_from_openmensa_json(canteen) for canteen in r.json()]
+    canteens.sort(key=lambda canteen: canteen.id)
+
+    return canteens
+
+
+# =====
+# Meals
+# =====
+class Meal:
+    name: str
+    price: float
+    category: str
+    image_url: str
+    allergenes: set[str]
+
+    def __init__(self, name: str, price: float, category: str, image_url: str, allergenes: set[str]):
+        self.name = name
+        self.price = price
+        self.category = category
+        self.image_url = image_url
+        self.allergenes = allergenes
+    
+    def __str__(self) -> str:
+        return f"{self.name} ({self.price}€)"
+
 
 def remove_allergenes(s: str) -> tuple[str, list[str]]:
     parts = s.replace('),', ')').split(' ')
@@ -57,46 +94,29 @@ def remove_allergenes(s: str) -> tuple[str, list[str]]:
 
     return (" ".join(name_parts), allergenes)
 
-@dataclass
-class Meal:
-    name: str
-    price: float
-    category: str
-    image_url: str
-    allergenes: set[str]
 
-    @staticmethod
-    def from_openmensa(meal: dict[str, Any]) -> 'Meal':
-        name, allergenes = remove_allergenes(meal["name"])
+def meal_from_openmensa_json(meal: dict[str, Any]) -> Meal:
+    name, allergenes = remove_allergenes(meal["name"])
 
-        return Meal(
-            name=name,
-            price=meal["prices"]["Studierende"],
-            category=meal["category"],
-            image_url='https:' + meal["image"],
-            allergenes=set(allergenes)
-        )
-    
-    def __str__(self) -> str:
-        return f"{self.name} ({self.price}€)"
+    return Meal(
+        name=name,
+        price=meal["prices"]["Studierende"],
+        category=meal["category"],
+        image_url='https:' + meal["image"],
+        allergenes=set(allergenes)
+    )
 
-
-def list_canteens() -> list[Canteen]:
-    r = requests.get(f"{ENDPOINT}/canteens")
-
-    canteens = [Canteen.from_openmensa(canteen) for canteen in r.json()]
-    canteens.sort(key=lambda canteen: canteen.id)
-
-    return canteens
 
 def list_meals(canteen_id: int, day: date) -> list[Meal]:
-    # day_string = day.strftime("%Y-%m-%d")
-    day_string = "2023-02-01"
+    day_string = day.strftime("%Y-%m-%d")
     meals = requests.get(f"{ENDPOINT}/canteens/{canteen_id}/days/{day_string}/meals").json()
 
-    return [Meal.from_openmensa(meal) for meal in meals]
+    return [meal_from_openmensa_json(meal) for meal in meals]
 
 
+# ===============
+# Discord Helpers
+# ===============
 def canteens_to_options(canteens: list[Canteen]) -> list[discord.SelectOption]:
     return [
         discord.SelectOption(
@@ -106,6 +126,7 @@ def canteens_to_options(canteens: list[Canteen]) -> list[discord.SelectOption]:
         )
         for canteen in canteens
     ]
+
 
 def meals_to_paginator(meals: list[Meal]) -> pages.Paginator:
     embeds: list[discord.Embed] = []
@@ -125,8 +146,8 @@ def meals_to_paginator(meals: list[Meal]) -> pages.Paginator:
 
     return pages.Paginator(pages=embeds) # type: ignore
 
+
 class CanteenDropdown(discord.ui.Select):
-    """ Small helper class for a dropdown. """
     callback_handler: Callable[[discord.Interaction, list[Any]], Coroutine[None, None, None]]
 
     async def callback(self, interaction: discord.Interaction):
@@ -136,6 +157,9 @@ class CanteenDropdown(discord.ui.Select):
         await paginator.respond(interaction)
 
 
+# ========
+# Commands
+# ========
 @bot.slash_command()
 async def food_solution(ctx: ApplicationContext):
     canteens = list_canteens()
